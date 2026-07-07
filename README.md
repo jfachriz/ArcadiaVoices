@@ -42,22 +42,47 @@ Arcadia Voices is a **stereo delay plugin** where each channel (left/right) is i
 
 ## 📥 Installation
 
-### macOS Installation
+### Option 1: Using DMG Installer (Recommended)
 
-1. **Download** the latest installer from the [Releases](https://github.com/your-repo/releases) page
-2. **Run** the `.pkg` installer package
-3. **Restart** your DAW
-4. **Scan** for new plugins (VST3 and AU formats supported)
+1. **Download** `ArcadiaVoices-1.0.dmg` from the [Releases](https://github.com/your-repo/releases) page
+2. **Mount** the disk image by double-clicking the downloaded file
+3. **Run** the installer package inside the DMG
+4. **Follow** the on-screen installation instructions
+5. **Restart** your DAW
+6. **Scan** for new plugins (VST3 and AU formats supported)
 
-### Manual Installation
+### Option 2: Using ZIP Archive
 
-If you prefer manual installation:
+1. **Download** `ArcadiaVoices-1.0.zip` from the [Releases](https://github.com/your-repo/releases) page
+2. **Extract** the ZIP archive
+3. **Copy** the plugin files to your DAW's plugin folders:
+   - `AV.vst3` → `~/Library/Audio/Plug-Ins/VST3/`
+   - `AV.component` → `~/Library/Audio/Plug-Ins/Components/`
+4. **Restart** your DAW
+5. **Rescan** plugins if they don't appear automatically
 
-1. Download the `.vst3` and `.component` files
+### Manual Installation (Individual Files)
+
+If you prefer to install individual plugin files:
+
+1. Download the `.vst3` and `.component` files from the release
 2. Copy them to your plugin folders:
    - VST3: `~/Library/Audio/Plug-Ins/VST3/`
    - AU: `~/Library/Audio/Plug-Ins/Components/`
 3. Restart your DAW and rescan plugins
+
+### Troubleshooting Installation
+
+**Plugin doesn't appear in DAW?**
+- Check plugin folder locations
+- Rescan plugins in your DAW
+- Restart your DAW and computer
+- Verify macOS 10.15+ requirement
+
+**Permission issues?**
+- Right-click plugin files → Get Info → Check permissions
+- Run `chmod +x` on plugin bundles if needed
+- Reinstall using the DMG package
 
 ## 🚀 Quick Start
 
