@@ -1,0 +1,108 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "AV-vst3::@f46ffc6a5eb4e23d2978"
+		},
+		{
+			"id" : "AV-au::@f46ffc6a5eb4e23d2978"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "AV-vst3::@f46ffc6a5eb4e23d2978"
+		},
+		{
+			"id" : "AV-au::@f46ffc6a5eb4e23d2978"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/macos-xcode/CMakeFiles/ALL_BUILD",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/macos-xcode/CMakeFiles/ALL_BUILD.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

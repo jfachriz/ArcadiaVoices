@@ -1,0 +1,99 @@
+{
+	"abstract" : true,
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"iplug_add_plugin",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"iPlug2/Scripts/cmake/WebView.cmake",
+			"iPlug2/Scripts/cmake/IPlugPlugin.cmake",
+			"ArcadiaVoices/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 471,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 3
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "iPlug2::WebView::@f46ffc6a5eb4e23d2978",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 5,
+			"fragment" : "-framework WebKit"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceSources" : 
+	[
+		{
+			"path" : "iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"local" : true,
+	"name" : "iPlug2::WebView",
+	"paths" : 
+	{
+		"build" : "ArcadiaVoices",
+		"source" : "ArcadiaVoices"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

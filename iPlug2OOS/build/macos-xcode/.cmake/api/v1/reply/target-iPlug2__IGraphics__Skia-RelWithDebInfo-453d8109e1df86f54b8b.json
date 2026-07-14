@@ -1,0 +1,118 @@
+{
+	"abstract" : true,
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"find_package",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"iPlug2/Scripts/cmake/IGraphics.cmake",
+			"iPlug2/Scripts/cmake/FindiPlug2.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 303,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 329,
+				"parent" : 4
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "iPlug2::IGraphics::Skia::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libskia.a"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libsvg.a"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libskshaper.a"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libskparagraph.a"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libskunicode_core.a"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Build/mac/lib/libskunicode_icu.a"
+		}
+	],
+	"local" : true,
+	"name" : "iPlug2::IGraphics::Skia",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

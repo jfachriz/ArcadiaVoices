@@ -1,0 +1,1680 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "_AV-base::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-_AV-base-Debug-b9fd89527e3ea17765f5.json",
+					"name" : "_AV-base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AAX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AAX-Debug-403eb129e7267ec3986c.json",
+					"name" : "iPlug2::AAX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::APP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__APP-Debug-432ce12b474085419ef5.json",
+					"name" : "iPlug2::APP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::AUv2::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__AUv2-Debug-c1470e0570beae7090f5.json",
+					"name" : "iPlug2::AUv2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AUv3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AUv3-Debug-fc474f115131996b8c24.json",
+					"name" : "iPlug2::AUv3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::CLAP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__CLAP-Debug-d8e022d88a5f646d8587.json",
+					"name" : "iPlug2::CLAP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::FlexBox::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__FlexBox-Debug-28d1a7cb407f210a29a7.json",
+					"name" : "iPlug2::Extras::FlexBox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::HIIR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__HIIR-Debug-b0df08b744b8572f8e38.json",
+					"name" : "iPlug2::Extras::HIIR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::IWebViewControl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__IWebViewControl-Debug-7f0adc9e303db6332553.json",
+					"name" : "iPlug2::Extras::IWebViewControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::OSC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__OSC-Debug-2d922b22c350c8fc1fc4.json",
+					"name" : "iPlug2::Extras::OSC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::Synth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__Synth-Debug-91fc535be7b65f7ed564.json",
+					"name" : "iPlug2::Extras::Synth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics-Debug-12736ac24d7debb30429.json",
+					"name" : "iPlug2::IGraphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL2-Debug-681f7f37188359b0fde9.json",
+					"name" : "iPlug2::IGraphics::GL2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL3-Debug-569f51139b3e21a4732b.json",
+					"name" : "iPlug2::IGraphics::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Metal-Debug-0482ae2d3d08ffc47057.json",
+					"name" : "iPlug2::IGraphics::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG-Debug-a88de0428217ce4b883d.json",
+					"name" : "iPlug2::IGraphics::NanoVG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__GL3-Debug-f393d0dead9a34542178.json",
+					"name" : "iPlug2::IGraphics::NanoVG::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__Metal-Debug-a89c2910ccb862399781.json",
+					"name" : "iPlug2::IGraphics::NanoVG::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia-Debug-453d8109e1df86f54b8b.json",
+					"name" : "iPlug2::IGraphics::Skia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::CPU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__CPU-Debug-0ed7d3492037b6da6a6d.json",
+					"name" : "iPlug2::IGraphics::Skia::CPU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__GL3-Debug-42c509378871fe280c46.json",
+					"name" : "iPlug2::IGraphics::Skia::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__Metal-Debug-34e3382570c19b41fd7c.json",
+					"name" : "iPlug2::IGraphics::Skia::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IPlug-Debug-03be6a79e6acb5253d3e.json",
+					"name" : "iPlug2::IPlug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST2-Debug-edfa99e5299407e5c3b1.json",
+					"name" : "iPlug2::VST2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST3-Debug-e1223dd34d3906584e38.json",
+					"name" : "iPlug2::VST3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::WebView::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__WebView-Debug-5179fd236d6e612e26d0.json",
+					"name" : "iPlug2::WebView",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::iPlug2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__iPlug2-Debug-1a5f17a5f19a3859e493.json",
+					"name" : "iPlug2::iPlug2",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"build" : "ArcadiaVoices",
+					"jsonFile" : "directory-ArcadiaVoices-Debug-8e766ecdf8e176d16c78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "ArcadiaVoices",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "iPlug2OOS",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "AV",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ALL_BUILD-Debug-180f20321f4bd055a21b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-f3502fd49454e55df630.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-au::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-au-Debug-89b5b65b4da6d97d0815.json",
+					"name" : "AV-au",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-vst3::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-vst3-Debug-e9b8eb420a31234029c0.json",
+					"name" : "AV-vst3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZERO_CHECK::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ZERO_CHECK-Debug-85ce8d7f6ce670846537.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-77edcd5615e34e68f04f.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_FlexBox_obj-Debug-3a06603c6af71d3ccb95.json",
+					"name" : "iPlug2_Extras_FlexBox_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_IWebViewControl_obj-Debug-8ff8ff43372fb5b63e7f.json",
+					"name" : "iPlug2_Extras_IWebViewControl_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_GL_obj-Debug-83745739b2343ed89b94.json",
+					"name" : "iPlug2_IGraphics_NanoVG_GL_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_Metal_obj-Debug-3192ee090cb9c3b18710.json",
+					"name" : "iPlug2_IGraphics_NanoVG_Metal_obj",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "_AV-base::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-_AV-base-Release-b9fd89527e3ea17765f5.json",
+					"name" : "_AV-base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AAX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AAX-Release-403eb129e7267ec3986c.json",
+					"name" : "iPlug2::AAX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::APP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__APP-Release-432ce12b474085419ef5.json",
+					"name" : "iPlug2::APP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::AUv2::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__AUv2-Release-c1470e0570beae7090f5.json",
+					"name" : "iPlug2::AUv2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AUv3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AUv3-Release-fc474f115131996b8c24.json",
+					"name" : "iPlug2::AUv3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::CLAP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__CLAP-Release-d8e022d88a5f646d8587.json",
+					"name" : "iPlug2::CLAP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::FlexBox::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__FlexBox-Release-8d9a6e0fa107042bbba9.json",
+					"name" : "iPlug2::Extras::FlexBox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::HIIR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__HIIR-Release-b0df08b744b8572f8e38.json",
+					"name" : "iPlug2::Extras::HIIR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::IWebViewControl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__IWebViewControl-Release-63e0237c381b6370daf4.json",
+					"name" : "iPlug2::Extras::IWebViewControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::OSC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__OSC-Release-2d922b22c350c8fc1fc4.json",
+					"name" : "iPlug2::Extras::OSC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::Synth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__Synth-Release-91fc535be7b65f7ed564.json",
+					"name" : "iPlug2::Extras::Synth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics-Release-12736ac24d7debb30429.json",
+					"name" : "iPlug2::IGraphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL2-Release-681f7f37188359b0fde9.json",
+					"name" : "iPlug2::IGraphics::GL2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL3-Release-569f51139b3e21a4732b.json",
+					"name" : "iPlug2::IGraphics::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Metal-Release-0482ae2d3d08ffc47057.json",
+					"name" : "iPlug2::IGraphics::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG-Release-d90264bb5c72c7123e5b.json",
+					"name" : "iPlug2::IGraphics::NanoVG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__GL3-Release-ebf2360c4555947af78f.json",
+					"name" : "iPlug2::IGraphics::NanoVG::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__Metal-Release-9192d71fb790c8c724bc.json",
+					"name" : "iPlug2::IGraphics::NanoVG::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia-Release-453d8109e1df86f54b8b.json",
+					"name" : "iPlug2::IGraphics::Skia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::CPU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__CPU-Release-0ed7d3492037b6da6a6d.json",
+					"name" : "iPlug2::IGraphics::Skia::CPU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__GL3-Release-42c509378871fe280c46.json",
+					"name" : "iPlug2::IGraphics::Skia::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__Metal-Release-34e3382570c19b41fd7c.json",
+					"name" : "iPlug2::IGraphics::Skia::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IPlug-Release-03be6a79e6acb5253d3e.json",
+					"name" : "iPlug2::IPlug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST2-Release-edfa99e5299407e5c3b1.json",
+					"name" : "iPlug2::VST2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST3-Release-e1223dd34d3906584e38.json",
+					"name" : "iPlug2::VST3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::WebView::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__WebView-Release-5179fd236d6e612e26d0.json",
+					"name" : "iPlug2::WebView",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::iPlug2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__iPlug2-Release-1a5f17a5f19a3859e493.json",
+					"name" : "iPlug2::iPlug2",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"build" : "ArcadiaVoices",
+					"jsonFile" : "directory-ArcadiaVoices-Release-8e766ecdf8e176d16c78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "ArcadiaVoices",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "iPlug2OOS",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "AV",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ALL_BUILD-Release-180f20321f4bd055a21b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-f3502fd49454e55df630.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-au::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-au-Release-11817b424f784a52e112.json",
+					"name" : "AV-au",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-vst3::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-vst3-Release-062ee1fd2b294391f7ba.json",
+					"name" : "AV-vst3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZERO_CHECK::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ZERO_CHECK-Release-85ce8d7f6ce670846537.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-77edcd5615e34e68f04f.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_FlexBox_obj-Release-7ccb8149342afa57e121.json",
+					"name" : "iPlug2_Extras_FlexBox_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_IWebViewControl_obj-Release-1e6d66fd6e0334cde3a4.json",
+					"name" : "iPlug2_Extras_IWebViewControl_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_GL_obj-Release-d2a0d9feedabce24c234.json",
+					"name" : "iPlug2_IGraphics_NanoVG_GL_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_Metal_obj-Release-fa20dd0997b509eead9e.json",
+					"name" : "iPlug2_IGraphics_NanoVG_Metal_obj",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "_AV-base::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-_AV-base-MinSizeRel-b9fd89527e3ea17765f5.json",
+					"name" : "_AV-base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AAX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AAX-MinSizeRel-403eb129e7267ec3986c.json",
+					"name" : "iPlug2::AAX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::APP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__APP-MinSizeRel-432ce12b474085419ef5.json",
+					"name" : "iPlug2::APP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::AUv2::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__AUv2-MinSizeRel-c1470e0570beae7090f5.json",
+					"name" : "iPlug2::AUv2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AUv3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AUv3-MinSizeRel-fc474f115131996b8c24.json",
+					"name" : "iPlug2::AUv3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::CLAP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__CLAP-MinSizeRel-d8e022d88a5f646d8587.json",
+					"name" : "iPlug2::CLAP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::FlexBox::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__FlexBox-MinSizeRel-ab40ea9eb7e8a4dba450.json",
+					"name" : "iPlug2::Extras::FlexBox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::HIIR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__HIIR-MinSizeRel-b0df08b744b8572f8e38.json",
+					"name" : "iPlug2::Extras::HIIR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::IWebViewControl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__IWebViewControl-MinSizeRel-7d385064be8f5acb33aa.json",
+					"name" : "iPlug2::Extras::IWebViewControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::OSC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__OSC-MinSizeRel-2d922b22c350c8fc1fc4.json",
+					"name" : "iPlug2::Extras::OSC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::Synth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__Synth-MinSizeRel-91fc535be7b65f7ed564.json",
+					"name" : "iPlug2::Extras::Synth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics-MinSizeRel-12736ac24d7debb30429.json",
+					"name" : "iPlug2::IGraphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL2-MinSizeRel-681f7f37188359b0fde9.json",
+					"name" : "iPlug2::IGraphics::GL2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL3-MinSizeRel-569f51139b3e21a4732b.json",
+					"name" : "iPlug2::IGraphics::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Metal-MinSizeRel-0482ae2d3d08ffc47057.json",
+					"name" : "iPlug2::IGraphics::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG-MinSizeRel-0e5429636229f0e2d87c.json",
+					"name" : "iPlug2::IGraphics::NanoVG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__GL3-MinSizeRel-e7cf5a2f97422ab9ecd2.json",
+					"name" : "iPlug2::IGraphics::NanoVG::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__Metal-MinSizeRel-5dd6f491fa5de541c126.json",
+					"name" : "iPlug2::IGraphics::NanoVG::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia-MinSizeRel-453d8109e1df86f54b8b.json",
+					"name" : "iPlug2::IGraphics::Skia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::CPU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__CPU-MinSizeRel-0ed7d3492037b6da6a6d.json",
+					"name" : "iPlug2::IGraphics::Skia::CPU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__GL3-MinSizeRel-42c509378871fe280c46.json",
+					"name" : "iPlug2::IGraphics::Skia::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__Metal-MinSizeRel-34e3382570c19b41fd7c.json",
+					"name" : "iPlug2::IGraphics::Skia::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IPlug-MinSizeRel-03be6a79e6acb5253d3e.json",
+					"name" : "iPlug2::IPlug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST2-MinSizeRel-edfa99e5299407e5c3b1.json",
+					"name" : "iPlug2::VST2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST3-MinSizeRel-e1223dd34d3906584e38.json",
+					"name" : "iPlug2::VST3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::WebView::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__WebView-MinSizeRel-5179fd236d6e612e26d0.json",
+					"name" : "iPlug2::WebView",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::iPlug2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__iPlug2-MinSizeRel-1a5f17a5f19a3859e493.json",
+					"name" : "iPlug2::iPlug2",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-MinSizeRel-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"build" : "ArcadiaVoices",
+					"jsonFile" : "directory-ArcadiaVoices-MinSizeRel-8e766ecdf8e176d16c78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "ArcadiaVoices",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "iPlug2OOS",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "AV",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-180f20321f4bd055a21b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-f3502fd49454e55df630.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-au::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-au-MinSizeRel-88ce3f0a8395a03db882.json",
+					"name" : "AV-au",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-vst3::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-vst3-MinSizeRel-9b5b56c645a581ab7dde.json",
+					"name" : "AV-vst3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZERO_CHECK::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-85ce8d7f6ce670846537.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-77edcd5615e34e68f04f.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_FlexBox_obj-MinSizeRel-8bf9df5797b7fea8c53b.json",
+					"name" : "iPlug2_Extras_FlexBox_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_IWebViewControl_obj-MinSizeRel-2fd2a16d1ee667f0f2e5.json",
+					"name" : "iPlug2_Extras_IWebViewControl_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_GL_obj-MinSizeRel-1e8da0d47814d0dd815f.json",
+					"name" : "iPlug2_IGraphics_NanoVG_GL_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_Metal_obj-MinSizeRel-ec3d5118f68c2e5f3f9c.json",
+					"name" : "iPlug2_IGraphics_NanoVG_Metal_obj",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "_AV-base::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-_AV-base-RelWithDebInfo-b9fd89527e3ea17765f5.json",
+					"name" : "_AV-base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AAX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AAX-RelWithDebInfo-403eb129e7267ec3986c.json",
+					"name" : "iPlug2::AAX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::APP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__APP-RelWithDebInfo-432ce12b474085419ef5.json",
+					"name" : "iPlug2::APP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::AUv2::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__AUv2-RelWithDebInfo-c1470e0570beae7090f5.json",
+					"name" : "iPlug2::AUv2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::AUv3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__AUv3-RelWithDebInfo-fc474f115131996b8c24.json",
+					"name" : "iPlug2::AUv3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::CLAP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__CLAP-RelWithDebInfo-d8e022d88a5f646d8587.json",
+					"name" : "iPlug2::CLAP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::FlexBox::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__FlexBox-RelWithDebInfo-b26102bda4a341c4b45f.json",
+					"name" : "iPlug2::Extras::FlexBox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::HIIR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__HIIR-RelWithDebInfo-b0df08b744b8572f8e38.json",
+					"name" : "iPlug2::Extras::HIIR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::IWebViewControl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__IWebViewControl-RelWithDebInfo-bc257cc2b614d53e1297.json",
+					"name" : "iPlug2::Extras::IWebViewControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::OSC::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__OSC-RelWithDebInfo-2d922b22c350c8fc1fc4.json",
+					"name" : "iPlug2::Extras::OSC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::Extras::Synth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__Extras__Synth-RelWithDebInfo-91fc535be7b65f7ed564.json",
+					"name" : "iPlug2::Extras::Synth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics-RelWithDebInfo-12736ac24d7debb30429.json",
+					"name" : "iPlug2::IGraphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL2-RelWithDebInfo-681f7f37188359b0fde9.json",
+					"name" : "iPlug2::IGraphics::GL2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__GL3-RelWithDebInfo-569f51139b3e21a4732b.json",
+					"name" : "iPlug2::IGraphics::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Metal-RelWithDebInfo-0482ae2d3d08ffc47057.json",
+					"name" : "iPlug2::IGraphics::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG-RelWithDebInfo-c0253c3169c2a200fece.json",
+					"name" : "iPlug2::IGraphics::NanoVG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__GL3-RelWithDebInfo-c4c9f2e9506d5fb1d31a.json",
+					"name" : "iPlug2::IGraphics::NanoVG::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::NanoVG::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__NanoVG__Metal-RelWithDebInfo-1e187d9129a4fb6c5dc5.json",
+					"name" : "iPlug2::IGraphics::NanoVG::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia-RelWithDebInfo-453d8109e1df86f54b8b.json",
+					"name" : "iPlug2::IGraphics::Skia",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::CPU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__CPU-RelWithDebInfo-0ed7d3492037b6da6a6d.json",
+					"name" : "iPlug2::IGraphics::Skia::CPU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::GL3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__GL3-RelWithDebInfo-42c509378871fe280c46.json",
+					"name" : "iPlug2::IGraphics::Skia::GL3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IGraphics::Skia::Metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IGraphics__Skia__Metal-RelWithDebInfo-34e3382570c19b41fd7c.json",
+					"name" : "iPlug2::IGraphics::Skia::Metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__IPlug-RelWithDebInfo-03be6a79e6acb5253d3e.json",
+					"name" : "iPlug2::IPlug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST2-RelWithDebInfo-edfa99e5299407e5c3b1.json",
+					"name" : "iPlug2::VST2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__VST3-RelWithDebInfo-e1223dd34d3906584e38.json",
+					"name" : "iPlug2::VST3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "iPlug2::WebView::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-iPlug2__WebView-RelWithDebInfo-5179fd236d6e612e26d0.json",
+					"name" : "iPlug2::WebView",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2::iPlug2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2__iPlug2-RelWithDebInfo-1a5f17a5f19a3859e493.json",
+					"name" : "iPlug2::iPlug2",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"build" : "ArcadiaVoices",
+					"jsonFile" : "directory-ArcadiaVoices-RelWithDebInfo-8e766ecdf8e176d16c78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "ArcadiaVoices",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						26
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "iPlug2OOS",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3,
+						25
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "AV",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-180f20321f4bd055a21b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-f3502fd49454e55df630.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-au::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-au-RelWithDebInfo-3dbd7b8399bf42b8ce98.json",
+					"name" : "AV-au",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "AV-vst3::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-AV-vst3-RelWithDebInfo-c128978be7977f17f862.json",
+					"name" : "AV-vst3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ZERO_CHECK::@f46ffc6a5eb4e23d2978",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-85ce8d7f6ce670846537.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-77edcd5615e34e68f04f.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_FlexBox_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_FlexBox_obj-RelWithDebInfo-4a7ae34656bb746dce21.json",
+					"name" : "iPlug2_Extras_FlexBox_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_Extras_IWebViewControl_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_Extras_IWebViewControl_obj-RelWithDebInfo-5bc95deb19fbeef84013.json",
+					"name" : "iPlug2_Extras_IWebViewControl_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_GL_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_GL_obj-RelWithDebInfo-91469ccad6018cd57e89.json",
+					"name" : "iPlug2_IGraphics_NanoVG_GL_obj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "iPlug2_IGraphics_NanoVG_Metal_obj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-iPlug2_IGraphics_NanoVG_Metal_obj-RelWithDebInfo-c30c90e62e58f3087f59.json",
+					"name" : "iPlug2_IGraphics_NanoVG_Metal_obj",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode",
+		"source" : "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

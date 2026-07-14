@@ -1,0 +1,189 @@
+ /*
+ ==============================================================================
+ 
+ This file is part of the iPlug 2 library. Copyright (C) the iPlug 2 developers. 
+ 
+ See LICENSE.txt for  more info.
+ 
+ ==============================================================================
+*/
+
+#import <CoreAudioKit/AUViewController.h>
+#import "IPlugAUAudioUnit.h"
+#import "IPlugAUViewController.h"
+#include "IPlugPlatform.h"
+#include "IPlugLogger.h"
+
+#if !__has_feature(objc_arc)
+#error This file must be compiled with Arc. Use -fobjc-arc flag
+#endif
+
+@interface IPLUG_AUVIEWCONTROLLER (AUAudioUnitFactory)
+@end
+
+@implementation IPLUG_AUVIEWCONTROLLER
+{
+#ifndef OS_IOS
+  __strong NSLayoutConstraint* mWidthConstraint;
+  __strong NSLayoutConstraint* mHeightConstraint;
+  NSView* mPlugView;
+#endif
+}
+
+- (AUAudioUnit*) createAudioUnitWithComponentDescription:(AudioComponentDescription) desc error:(NSError **)error
+{
+  self.audioUnit = [[IPLUG_AUAUDIOUNIT alloc] initWithComponentDescription:desc error:error];
+
+  [self audioUnitInitialized];
+
+  return self.audioUnit;
+}
+
+#if defined(OS_VISIONOS) && defined(VISIONOS_TRANSPARENT_VC)
+- (UIContainerBackgroundStyle) preferredContainerBackgroundStyle
+{
+  return UIContainerBackgroundStyleHidden;
+}
+#endif
+
+#ifdef OS_IOS
+- (void) viewDidLayoutSubviews
+{
+  if (self.audioUnit)
+  {
+    [(IPLUG_AUAUDIOUNIT*) self.audioUnit hostResized: self.view.frame.size];
+  }
+}
+
+- (void) viewWillAppear:(BOOL) animated
+{
+  [super viewWillAppear:animated];
+  
+  if (self.audioUnit)
+  {
+    [(IPLUG_AUAUDIOUNIT*) self.audioUnit openWindow:self.view];
+  }
+}
+
+- (void) viewDidDisappear:(BOOL) animated
+{
+  [super viewDidDisappear:animated];
+  
+  if (self.audioUnit)
+  {
+    [(IPLUG_AUAUDIOUNIT*) self.audioUnit closeWindow];
+  }
+}
+#else
+- (void) viewDidLayout
+{
+  [super viewDidLayout];
+
+  if (self.audioUnit)
+  {
+    IPLUG_AUAUDIOUNIT* au = (IPLUG_AUAUDIOUNIT*) self.audioUnit;
+    CGSize containerSize = self.view.frame.size;
+
+    // Update constraints to fill container (for host-resize enabled plugins)
+    if ([au getHostResizeEnabled] && mWidthConstraint && mHeightConstraint)
+    {
+      mWidthConstraint.constant = containerSize.width;
+      mHeightConstraint.constant = containerSize.height;
+    }
+
+    // Notify plugin of size change
+    [au hostResized:containerSize];
+  }
+}
+
+- (void) viewWillAppear
+{
+  [super viewWillAppear];
+
+  mPlugView = [(IPLUG_AUAUDIOUNIT*) self.audioUnit openWindow:self.view];
+
+  if (mPlugView)
+  {
+    // Use auto-layout constraints to pin the plugin view to the top-left of the container
+    mPlugView.translatesAutoresizingMaskIntoConstraints = NO;
+
+    mWidthConstraint = [mPlugView.widthAnchor constraintEqualToConstant:mPlugView.frame.size.width];
+    mHeightConstraint = [mPlugView.heightAnchor constraintEqualToConstant:mPlugView.frame.size.height];
+
+    [NSLayoutConstraint activateConstraints:@[
+      [mPlugView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+      [mPlugView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+      mWidthConstraint,
+      mHeightConstraint
+    ]];
+  }
+}
+
+- (void) viewDidDisappear
+{
+  // Deactivate constraints before closing to prevent conflicts on next viewWillAppear
+  if (mWidthConstraint && mHeightConstraint)
+  {
+    [NSLayoutConstraint deactivateConstraints:@[mWidthConstraint, mHeightConstraint]];
+    mWidthConstraint = nil;
+    mHeightConstraint = nil;
+  }
+  mPlugView = nil;
+
+  [(IPLUG_AUAUDIOUNIT*) self.audioUnit closeWindow];
+}
+
+- (instancetype) initWithNibName:(NSNibName)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+  self = [super initWithNibName:nibNameOrNil bundle:[NSBundle bundleForClass:self.class]];
+  
+  return self;
+}
+
+- (void) viewDidLoad
+{
+  [super viewDidLoad];
+
+  // Disable auto-layout constraint translation for the view controller's view
+  // so we can rely on frame-based positioning from the host
+  self.view.translatesAutoresizingMaskIntoConstraints = YES;
+
+  // Set autoresizing to keep the view pinned to top-left when host container resizes
+  // flexibleMaxX = extra space on right, flexibleMinY = extra space below (stay at top)
+  self.view.autoresizingMask = NSViewMaxXMargin | NSViewMinYMargin;
+
+  // Set preferredContentSize here for out-of-process (OOP) hosts.
+  // For in-process hosts like REAPER, audioUnit is available synchronously in
+  // audioUnitInitialized (called from createAudioUnitWithComponentDescription),
+  // so we also set it there. Setting it twice is harmless.
+  if (self.audioUnit)
+  {
+    int width = (int) [(IPLUG_AUAUDIOUNIT*) self.audioUnit width];
+    int height = (int) [(IPLUG_AUAUDIOUNIT*) self.audioUnit height];
+    self.preferredContentSize = CGSizeMake(width, height);
+  }
+}
+
+
+#endif
+
+- (AUAudioUnit*) getAudioUnit
+{
+  return self.audioUnit;
+}
+
+- (void) audioUnitInitialized
+{
+  // Set preferredContentSize synchronously for in-process hosts (e.g. REAPER).
+  // In-process hosts call createAudioUnitWithComponentDescription on the main thread,
+  // so audioUnit is available here before viewDidLoad. For OOP hosts this runs on a
+  // background thread, so we also set preferredContentSize in viewDidLoad.
+  if ([NSThread isMainThread])
+  {
+    int width = (int) [(IPLUG_AUAUDIOUNIT*) self.audioUnit width];
+    int height = (int) [(IPLUG_AUAUDIOUNIT*) self.audioUnit height];
+    self.preferredContentSize = CGSizeMake(width, height);
+  }
+}
+
+@end

@@ -1,0 +1,123 @@
+parameters:
+  buildAllProjects: false
+
+jobs:
+- job: BUILD_MAC_PROJECTS
+  condition: and(eq(variables.build_deps, false), eq(variables.build_mac, true))
+  dependsOn: GET_SRC_TREE
+  timeoutInMinutes: 120
+
+  strategy:
+    matrix:
+      NANOVG:
+        graphics: 'NANOVG'
+      ${{ if eq(variables.build_skia, true) }}:
+        SKIA:
+          graphics: 'SKIA'
+
+  pool:
+    vmImage: 'macos-latest'
+
+  steps:
+  - checkout: none
+
+  - template: get_src_artifact.yml
+
+  - template: projects.yml
+    parameters:
+      platform: build_project-mac.yml
+      graphics: $(graphics)
+      buildAllProjects: ${{parameters.buildAllProjects}}
+
+- job: BUILD_IOS_PROJECTS
+  condition: and(eq(variables.build_deps, false), eq(variables.build_ios, true))
+  dependsOn: GET_SRC_TREE
+
+  strategy:
+    matrix:
+      NANOVG:
+        graphics: 'NANOVG'
+      ${{ if eq(variables.build_skia, true) }}:
+        SKIA:
+          graphics: 'SKIA'
+
+  pool:
+    vmImage: 'macos-latest'
+
+  steps:
+  - checkout: none
+
+  - template: get_src_artifact.yml
+
+  - template: projects.yml
+    parameters:
+      platform: build_project-ios.yml
+      graphics: $(graphics)
+      buildAllProjects: ${{parameters.buildAllProjects}}
+
+- job: BUILD_WIN_PROJECTS
+  condition: and(eq(variables.build_deps, false), eq(variables.build_win, true))
+  dependsOn:
+    - GET_SRC_TREE
+    # comment this dependency if not building with AAX_SDK.zip secure file
+    # - BUILD_WIN_AAX_LIBS
+  timeoutInMinutes: 120
+
+  strategy:
+    matrix:
+      NANOVG:
+        graphics: 'NANOVG'
+      ${{ if eq(variables.build_skia, true) }}:
+        SKIA:
+          graphics: 'SKIA'
+
+  pool:
+    vmImage: 'windows-2022'
+
+  steps:
+  - checkout: none
+
+  - template: get_src_artifact.yml
+
+  # - task: DownloadPipelineArtifact@2
+  #   inputs:
+  #     artifactName: 'DEPS_AAX_LIB_WIN'
+  #     targetPath: 'Dependencies/IPlug/AAX_SDK/Libs/'
+  #   condition: eq(variables.build_aax, true)
+
+  - template: projects.yml
+    parameters:
+      platform: build_project-win.yml
+      graphics: $(graphics)
+      buildAllProjects: ${{parameters.buildAllProjects}}
+
+- job: BUILD_WEB_PROJECTS
+  condition: and(eq(variables.build_deps, false), eq(variables.build_web, true))
+  dependsOn: GET_SRC_TREE
+  timeoutInMinutes: 120
+
+  strategy:
+    matrix:
+      NANOVG:
+        graphics: 'NANOVG'
+
+  pool:
+    vmImage: 'ubuntu-latest'
+
+  steps:
+  - checkout: none
+
+  - bash: |
+      git clone https://github.com/emscripten-core/emsdk.git
+      cd emsdk
+      ./emsdk install latest 
+      ./emsdk activate latest
+    displayName: Install emscripten
+
+  - template: get_src_artifact.yml
+
+  - template: projects.yml
+    parameters:
+      platform: build_project-web.yml
+      graphics: $(graphics)
+      buildAllProjects: ${{parameters.buildAllProjects}}

@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -d $APP_PATH/IPlugWebUI.app ]; then
+  pluginkit -a $APP_PATH/IPlugWebUI.app/Contents/PlugIns/IPlugWebUI.appex
+  echo "Force register auv3"
+else
+  echo "App path doesn't exist yet, cant force register auv3"
+fi
+

@@ -1,0 +1,7 @@
+# ArcadiaVoices readme
+
+iPlug2 template project
+
+## Distribution docs
+
+Installer text lives in `installer/*.md` and the user manual lives in `manual/ArcadiaVoices manual.md`. The packaging scripts use Pandoc to generate installer-compatible RTF/TXT files and a PDF manual from those Markdown sources during release builds.

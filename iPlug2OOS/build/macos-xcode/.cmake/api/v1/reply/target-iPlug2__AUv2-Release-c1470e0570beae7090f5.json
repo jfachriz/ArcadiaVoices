@@ -1,0 +1,140 @@
+{
+	"abstract" : true,
+	"backtrace" : 6,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"iplug_configure_target",
+			"_iplug_create_au_targets",
+			"iplug_add_plugin",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"iPlug2/Scripts/cmake/AUv2.cmake",
+			"iPlug2/Scripts/cmake/FindiPlug2.cmake",
+			"iPlug2/Scripts/cmake/IPlugPlugin.cmake",
+			"ArcadiaVoices/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 491,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 178,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 226,
+				"parent" : 3
+			},
+			{
+				"file" : 0,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 5
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "iPlug2::AUv2::@f46ffc6a5eb4e23d2978",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 7,
+			"fragment" : "-framework AudioUnit"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "-framework AudioToolbox"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "-framework CoreAudio"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "-framework CoreMIDI"
+		},
+		{
+			"backtrace" : 7,
+			"fragment" : "-framework Cocoa"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "iPlug2::IPlug::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceSources" : 
+	[
+		{
+			"path" : "iPlug2/IPlug/AUv2/IPlugAU.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"path" : "iPlug2/IPlug/AUv2/dfx-au-utilities.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"local" : true,
+	"name" : "iPlug2::AUv2",
+	"paths" : 
+	{
+		"build" : "ArcadiaVoices",
+		"source" : "ArcadiaVoices"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'VST3' in project 'IPlugWebUI-macOS' (no dependencies)

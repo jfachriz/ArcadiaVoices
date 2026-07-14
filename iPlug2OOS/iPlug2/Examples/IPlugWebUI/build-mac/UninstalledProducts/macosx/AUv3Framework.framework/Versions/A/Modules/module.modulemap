@@ -1,0 +1,6 @@
+framework module AUv3Framework {
+  umbrella header "AUv3Framework.h"
+  export *
+
+  module * { export * }
+}

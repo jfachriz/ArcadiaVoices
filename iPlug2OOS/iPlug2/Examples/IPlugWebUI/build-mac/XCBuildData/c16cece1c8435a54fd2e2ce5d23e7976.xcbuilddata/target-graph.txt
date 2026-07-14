@@ -1,0 +1,18 @@
+Target dependency graph (9 targets)
+Target 'All' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'AUv3App' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'VST2' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'AU' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'VST3' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'AAX' in project 'IPlugWebUI-macOS'
+Target 'VST3' in project 'IPlugWebUI-macOS' (no dependencies)
+Target 'VST2' in project 'IPlugWebUI-macOS' (no dependencies)
+Target 'AUv3App' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'AUv3Framework' in project 'IPlugWebUI-macOS'
+➜ Implicit dependency on target 'AUv3' in project 'IPlugWebUI-macOS' via file 'IPlugWebUI.appex' in build phase 'Copy Files'
+Target 'AUv3' in project 'IPlugWebUI-macOS'
+➜ Explicit dependency on target 'AUv3Framework' in project 'IPlugWebUI-macOS'
+Target 'AUv3Framework' in project 'IPlugWebUI-macOS' (no dependencies)
+Target 'AU' in project 'IPlugWebUI-macOS' (no dependencies)
+Target 'APP' in project 'IPlugWebUI-macOS' (no dependencies)
+Target 'AAX' in project 'IPlugWebUI-macOS' (no dependencies)

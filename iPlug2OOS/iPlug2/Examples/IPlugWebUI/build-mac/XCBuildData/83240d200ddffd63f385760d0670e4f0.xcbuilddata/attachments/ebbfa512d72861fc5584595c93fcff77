@@ -1,0 +1,3 @@
+#!/bin/sh
+touch $IPLUG_PATH/AUv3/IPlugAUv3Appex.m
+

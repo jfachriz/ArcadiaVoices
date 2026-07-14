@@ -1,0 +1,1496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		302A5B0BAE8C7C68EB40A3EF /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 576FCA2BC61F4D289EA1534C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				EE1EB3217E3B7FFA28475909 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				2912EB15666A4DFB83463AF1 /* PBXTargetDependency */,
+				61930327314A4A4FB422BCA5 /* PBXTargetDependency */,
+				436030F438104D2091F12447 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		B92BEEC8AA20A84DCC8DDEEE /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F8039999EE74E30A7217F49 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				17F444448400DDCDCEF3C44B /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		017283137CCD4B59AB8A6844 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */ = {isa = PBXBuildFile; fileRef = 08A4A57D992E4E31983273B1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */; };
+		0312BD6A61184A328137FB43 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp */ = {isa = PBXBuildFile; fileRef = EF40335FDBAD4283A8246B04 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp */; };
+		040A3A2832854B449F5960E7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */ = {isa = PBXBuildFile; fileRef = 444FDC65C50D471CAEB2DD61 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */; };
+		0B08026D98F94B1D92A917D7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */ = {isa = PBXBuildFile; fileRef = 4A83ADFEB3F844B69170A259 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */; };
+		102941CACE324CCCACA0C2E9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */ = {isa = PBXBuildFile; fileRef = ABA6E89C572C4F35AC93A13F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */; };
+		1670EF534BAF4AE9B8478B79 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */ = {isa = PBXBuildFile; fileRef = 0959D8D04102436C80985AFD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */; };
+		216BD624397D42F2BE1F334F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp */ = {isa = PBXBuildFile; fileRef = 060CEBBDC8734327A8255FE6 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp */; };
+		23DC4E981C0B49508C7C959E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */ = {isa = PBXBuildFile; fileRef = C8074522078048FB83B0C5B4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */; };
+		25E2933E69DC409D82F41538 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */ = {isa = PBXBuildFile; fileRef = FD081A19E00F4B109773B854 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */; };
+		2C40273142F248ABB36A96D8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */ = {isa = PBXBuildFile; fileRef = F35F748E3A524003B4CAAE50 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */; };
+		2F22B280B16547F791533238 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */ = {isa = PBXBuildFile; fileRef = E9FDF4B3633245FF9CB603E8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */; };
+		3E2AD5FC198A4B27983912FB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp */ = {isa = PBXBuildFile; fileRef = 21DBDED5980249F8BDC02D03 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp */; };
+		410B6250977B4B05B809F5BE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c */ = {isa = PBXBuildFile; fileRef = D9BCEC69D7324392BF458DE9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c */; };
+		43C9EA1060F549CEBDC9B834 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp */ = {isa = PBXBuildFile; fileRef = 45DD337D21594AE7808C7E1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp */; };
+		4C669A1135124E5F94E5B849 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp */ = {isa = PBXBuildFile; fileRef = B2C2210037BE4CA4AFBF6B54 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp */; };
+		4D540CCC441340AD9E66425B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */ = {isa = PBXBuildFile; fileRef = 5449FFA109EC4899A476EA31 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */; };
+		556BF9EBF0D84D13B9CE57A4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */ = {isa = PBXBuildFile; fileRef = D44CD9D0F1B148C2936C6EFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */; };
+		5C1DE6C78D4D4D53A94FE46D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */ = {isa = PBXBuildFile; fileRef = E370F89A30FB4EA297D1EA28 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		5D2616CFB58341B295D83CA5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */ = {isa = PBXBuildFile; fileRef = 3C9A4A81D2D44160A7C212A0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */; };
+		5ECC7768ADBA4263B130BF8D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp */ = {isa = PBXBuildFile; fileRef = 594231BE1D0D484AB33BDE17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp */; };
+		5EF6F135C9284506B656F564 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */ = {isa = PBXBuildFile; fileRef = 0E0DDF30670B4D3AB97FE5C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */; };
+		64FB0F3AD66A4C3888928829 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */ = {isa = PBXBuildFile; fileRef = D484776FCB8941B3B4565FA3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */; };
+		65CDEF9984A241749117320A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */ = {isa = PBXBuildFile; fileRef = 4DBE1289635F4A899256F101 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */; };
+		674C41C58931463198FCF56B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */ = {isa = PBXBuildFile; fileRef = 1900B7029C224A16BE28395F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */; };
+		678522D878384A42B9490DAA /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */ = {isa = PBXBuildFile; fileRef = A7C997AC8A3C4548893C01AD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */; };
+		6B1FDC277D43446E9306755B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */ = {isa = PBXBuildFile; fileRef = 3B3A2CA5A7564EB18455B6E0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */; };
+		6C86850A32684F9FA2068BAF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp */ = {isa = PBXBuildFile; fileRef = 4DA99EB8F12947BA8A6892AF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp */; };
+		6CFE63A291A74F16B6EF7743 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */ = {isa = PBXBuildFile; fileRef = 1070E7977D2E4642B081DA98 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */; };
+		70436EECBC614047BA697ABB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */ = {isa = PBXBuildFile; fileRef = 2BBC9CC4F0134F8EB4A881CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */; };
+		72596504823046CAA22FD75C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */ = {isa = PBXBuildFile; fileRef = A53A87E401AB4E35A9F5A5C3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */; };
+		7281216E090A4120B98BC6C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */ = {isa = PBXBuildFile; fileRef = 99204EABB0574C39B7D8AC24 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */; };
+		73318E1BC8E843619CFC2D35 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E45FC54524194B15947A75E7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */; };
+		73F0FDDAE0684F82BF06B063 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp */ = {isa = PBXBuildFile; fileRef = A2C76D8E1C39439C96E2248D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp */; };
+		741BF7E89AC84BF9AF0F1541 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp */ = {isa = PBXBuildFile; fileRef = 11A365513055462CA28AD23B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp */; };
+		74D06100C4FD4A959BBEC1AB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */ = {isa = PBXBuildFile; fileRef = F08FB8800FC74CE1ABBD9998 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */; };
+		78014751EF58477B88F436A2 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */ = {isa = PBXBuildFile; fileRef = C1B6B5D4B4F84F92BC44D8C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */; };
+		788189BDADC848198F7A2833 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */ = {isa = PBXBuildFile; fileRef = 7CEBE8D7A4714AE0B6B33352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */; };
+		790757DC1C9044EA8EBFB693 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */ = {isa = PBXBuildFile; fileRef = 6623F7B67B1C480680DDB5A2 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */; };
+		7C0A099801C74A189A52D6B5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp */ = {isa = PBXBuildFile; fileRef = 6DA35183E17F47449586E50B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp */; };
+		7DE1A2F2ADF449ABB185A70F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp */ = {isa = PBXBuildFile; fileRef = BF14EFB63F414BC6833E572F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp */; };
+		84C2DC5D54A6414588130154 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */ = {isa = PBXBuildFile; fileRef = 2A59CB24DF7B49F79C13E370 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */; };
+		90C1D08EE9CB4500ACAB1312 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp */ = {isa = PBXBuildFile; fileRef = 82FE67B5EC8642C4AFF4FC3D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp */; };
+		9373C2C2E6B34C9EACB8F58A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */ = {isa = PBXBuildFile; fileRef = 1A0FA30D11B34456B097FF96 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */; };
+		95A75C00E3344ECDA5DA8AC8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */ = {isa = PBXBuildFile; fileRef = 31FC88D6792648589315E748 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */; };
+		9644B1C76CEE4A7F8B90E2C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */ = {isa = PBXBuildFile; fileRef = EC930767F4D14F33B97A80C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */; };
+		9775CD17A2354C6F85219F5B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */ = {isa = PBXBuildFile; fileRef = A25A02EC82A141449295E352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */; };
+		99031AAC48B04BEF81DC3C89 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */ = {isa = PBXBuildFile; fileRef = A3E7A63F2BF749B2B32CC4E1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */; };
+		9C242F274A3C4308BE4C2FD5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4FA0139929894D7CAE4CA878 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */; };
+		9D4F444851114E069279832D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp */ = {isa = PBXBuildFile; fileRef = 9CE3C5602B8C43D6BFC0A3F8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp */; };
+		A3FC432AB61F41A5A4F8A633 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */ = {isa = PBXBuildFile; fileRef = F96619047C5848A2A391EA6A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */; };
+		A7E72E48B2604686AC2CF6D7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */ = {isa = PBXBuildFile; fileRef = BEAB5D3CC28543D885284A94 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */; };
+		ACB7B572E3B841418C35A127 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */ = {isa = PBXBuildFile; fileRef = 6A16C32D56F54FD5AFB3932A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */; };
+		ADBC8123FE8645BAB453640C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */ = {isa = PBXBuildFile; fileRef = 0F18FE4B169740FDA2283C2D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */; };
+		B1CE36EA75B24B758C4C0D6D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */ = {isa = PBXBuildFile; fileRef = EA5A33F83F594F89BD6C706A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */; };
+		B41A7B6659F840ECA03A38AD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */ = {isa = PBXBuildFile; fileRef = 0FA5ECF3CB034DC5A311DBFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */; };
+		B42A2E1C50084E87BE671564 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */ = {isa = PBXBuildFile; fileRef = 5690818D31864D79BE449B17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */; };
+		B4939DBD19404F058BC1CBA9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */ = {isa = PBXBuildFile; fileRef = C3BFE35F068A4218844EBEBB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */; };
+		B581EA4CD66A463C9C2329B0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */ = {isa = PBXBuildFile; fileRef = 23A74683BF5F416D9D42E414 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */; };
+		B65F638EB4894A3DA8AA2FC5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */ = {isa = PBXBuildFile; fileRef = F30C816874E04372A85E3162 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */; };
+		BA8322370DDE46EFB3CCF401 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */ = {isa = PBXBuildFile; fileRef = DE80F78A62D54DE289A7728F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */; };
+		BA84B908A9E249E989B4A5A5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp */ = {isa = PBXBuildFile; fileRef = 2BF05CBDDAC94EF8A72EC8CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp */; };
+		BD64A900193748F2A62AEAC0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */ = {isa = PBXBuildFile; fileRef = B57FE84D92014F258D81E04E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */; };
+		C0B5DF932C894232BDD2DD26 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp */ = {isa = PBXBuildFile; fileRef = 96B2C4B83E6B4B8D926D09C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp */; };
+		C1E31193D689479397E7F79A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp */ = {isa = PBXBuildFile; fileRef = 00E1D26C7751471690C08EBC /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp */; };
+		C7B5325FA9674DB2B576C1B8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm */ = {isa = PBXBuildFile; fileRef = 385797A5A7FC46E29E29CCE4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm */; };
+		C834D6D895A8418EA248D3DA /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */ = {isa = PBXBuildFile; fileRef = 764F5FEAA14F47B8B52D308C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */; };
+		C9A0024A6BD14AA6B5E2817E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */ = {isa = PBXBuildFile; fileRef = D30BE45F03EE4A8B8B2C06DE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */; };
+		CB1C1CF9DEDB4A2FB37D7844 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp */ = {isa = PBXBuildFile; fileRef = F4E0B11C69BC43A69364D1E9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp */; };
+		CD7E37AF5BF2446AB101C8F2 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */ = {isa = PBXBuildFile; fileRef = 1669AC3061A94C3B90FD55DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */; };
+		CF57E2FF2E954AEB900DDF2F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */ = {isa = PBXBuildFile; fileRef = 76D7CE685485490A8632B690 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */; };
+		CFC242F832EC451EA0D225EF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp */ = {isa = PBXBuildFile; fileRef = 80866FCC2EF7480F8231F6DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp */; };
+		D2E2BAF429694259A8423075 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */ = {isa = PBXBuildFile; fileRef = 445F2D65016F4302AD085311 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */; };
+		D448E79A9A104951BB4DCE9E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp */ = {isa = PBXBuildFile; fileRef = 74795C2554A84DD591C65911 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp */; };
+		D520FB2CBDB446C4A0BC7C5C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */ = {isa = PBXBuildFile; fileRef = 4334779C38DF483E88892FD0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */; };
+		D946882F36E3489CBF4E40D4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp */ = {isa = PBXBuildFile; fileRef = D23B99D917E44CCB92CA5F1B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp */; };
+		DC6657625A334B19BBB5BD2A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */ = {isa = PBXBuildFile; fileRef = F241C81B509D4BCBA8C52D42 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */; };
+		E0924C99C30E41559CD8AF82 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */ = {isa = PBXBuildFile; fileRef = 3C7BC5FF07F244E69335B208 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */; };
+		E16CC28A3A38433EA1F5DB86 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */ = {isa = PBXBuildFile; fileRef = AFB9BE30FBA94AF5A8F21A35 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */; };
+		E8D273F99223485986B3A7EE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */ = {isa = PBXBuildFile; fileRef = 4A4BBF7696094BE981E09A1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */; };
+		EC770D3DD08F45738E1FB9D9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */ = {isa = PBXBuildFile; fileRef = D557228DD09C4EACBD2C1AF3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */; };
+		EEC4A5C3EFB3429DA1D23105 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */ = {isa = PBXBuildFile; fileRef = 9AA8D175D47E484C953B3434 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F20BB551706B4944A263483C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */ = {isa = PBXBuildFile; fileRef = 362F5B387C594014A856FC83 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */; };
+		F5887A0E2ECE421AACDFCB50 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */ = {isa = PBXBuildFile; fileRef = 5859D15C261141B68F44C2E5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */; };
+		F5F01DF8D7ED4F9C9E156EB9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp */ = {isa = PBXBuildFile; fileRef = 93C2E989E5994284A3815DE7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp */; };
+		F93979F3288C4FED8CE582E5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */ = {isa = PBXBuildFile; fileRef = A38B51828BC94270AEEA4E1F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */; };
+		FD15ACB097794C6CACEF3B5C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp */ = {isa = PBXBuildFile; fileRef = 9D72857AF6ED4EA18C553688 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		057B039503E14A59A555BBC8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		05B614DD18E44F7A8F5F8AF0 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8F9082D637484BE2BEA6AE6F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		9D111F0F955E406A88B83DC2 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		22435E77DB834385B683D458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D6A0F6DD1704399BB14D341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D97123604986FDB7625F949;
+			remoteInfo = "AV-au";
+		};
+		86A01BD1E6F64E2083C54E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D6A0F6DD1704399BB14D341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B92BEEC8AA20A84DCC8DDEEE;
+			remoteInfo = ZERO_CHECK;
+		};
+		A5E86EA2B1394969BB4BFBE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D6A0F6DD1704399BB14D341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88A2459D9684456ABB13CA93;
+			remoteInfo = "AV-vst3";
+		};
+		D742EC5B4F6E4F70A6612963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D6A0F6DD1704399BB14D341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B92BEEC8AA20A84DCC8DDEEE;
+			remoteInfo = ZERO_CHECK;
+		};
+		FD725F57A7274071981C296C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D6A0F6DD1704399BB14D341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B92BEEC8AA20A84DCC8DDEEE;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E1D26C7751471690C08EBC /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstcomponent.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp; sourceTree = "<absolute>"; };
+		060CEBBDC8734327A8255FE6 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fstring.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp; sourceTree = "<absolute>"; };
+		08A4A57D992E4E31983273B1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugPluginBase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp; sourceTree = "<absolute>"; };
+		0959D8D04102436C80985AFD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugProcessor.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp; sourceTree = "<absolute>"; };
+		0E0DDF30670B4D3AB97FE5C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.js; path = resources/web/assets/index.js; sourceTree = SOURCE_ROOT; };
+		0F18FE4B169740FDA2283C2D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.html; path = resources/web/index.html; sourceTree = SOURCE_ROOT; };
+		0FA5ECF3CB034DC5A311DBFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugProcessor.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h; sourceTree = "<absolute>"; };
+		1070E7977D2E4642B081DA98 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugUtilities.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h; sourceTree = "<absolute>"; };
+		11A365513055462CA28AD23B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = macmain.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp; sourceTree = "<absolute>"; };
+		1669AC3061A94C3B90FD55DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugUtilities.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h; sourceTree = "<absolute>"; };
+		1900B7029C224A16BE28395F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugPluginBase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp; sourceTree = "<absolute>"; };
+		1A0FA30D11B34456B097FF96 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugParameter.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h; sourceTree = "<absolute>"; };
+		1B36185FAD4F486CAD0ADC77 /* AV-vst3 */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; path = AV.vst3/Contents/MacOS/AV; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DBDED5980249F8BDC02D03 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = updatehandler.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp; sourceTree = "<absolute>"; };
+		23A74683BF5F416D9D42E414 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.css; path = resources/web/assets/index.css; sourceTree = SOURCE_ROOT; };
+		2A59CB24DF7B49F79C13E370 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugTimer.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h; sourceTree = "<absolute>"; };
+		2BBC9CC4F0134F8EB4A881CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPluginBase.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h; sourceTree = "<absolute>"; };
+		2BF05CBDDAC94EF8A72EC8CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstsinglecomponenteffect.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp; sourceTree = "<absolute>"; };
+		2EDF83A375AF4F9689C2AB84 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		31FC88D6792648589315E748 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugAPIBase.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h; sourceTree = "<absolute>"; };
+		362F5B387C594014A856FC83 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ArcadiaVoices.h; path = ArcadiaVoices.h; sourceTree = SOURCE_ROOT; };
+		385797A5A7FC46E29E29CCE4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugAU_view_factory.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm; sourceTree = "<absolute>"; };
+		3B3A2CA5A7564EB18455B6E0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugProcessor.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h; sourceTree = "<absolute>"; };
+		3C7BC5FF07F244E69335B208 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugPaths.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp; sourceTree = "<absolute>"; };
+		3C9A4A81D2D44160A7C212A0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPluginBase.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h; sourceTree = "<absolute>"; };
+		4334779C38DF483E88892FD0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.js; path = resources/web/assets/index.js; sourceTree = SOURCE_ROOT; };
+		444FDC65C50D471CAEB2DD61 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPaths.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h; sourceTree = "<absolute>"; };
+		445F2D65016F4302AD085311 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugLogger.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h; sourceTree = "<absolute>"; };
+		45DD337D21594AE7808C7E1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flock.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp; sourceTree = "<absolute>"; };
+		4A4BBF7696094BE981E09A1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugConstants.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h; sourceTree = "<absolute>"; };
+		4A83ADFEB3F844B69170A259 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugPaths.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm; sourceTree = "<absolute>"; };
+		4DA99EB8F12947BA8A6892AF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstbus.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp; sourceTree = "<absolute>"; };
+		4DBE1289635F4A899256F101 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugEditorDelegate.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h; sourceTree = "<absolute>"; };
+		4FA0139929894D7CAE4CA878 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5449FFA109EC4899A476EA31 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugStructs.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h; sourceTree = "<absolute>"; };
+		5690818D31864D79BE449B17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugAPIBase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp; sourceTree = "<absolute>"; };
+		5859D15C261141B68F44C2E5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugStructs.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h; sourceTree = "<absolute>"; };
+		594231BE1D0D484AB33BDE17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstinitiids.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp; sourceTree = "<absolute>"; };
+		6623F7B67B1C480680DDB5A2 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugParameter.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp; sourceTree = "<absolute>"; };
+		6A16C32D56F54FD5AFB3932A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.html; path = resources/web/index.html; sourceTree = SOURCE_ROOT; };
+		6DA35183E17F47449586E50B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = funknown.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp; sourceTree = "<absolute>"; };
+		74795C2554A84DD591C65911 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pluginfactory.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp; sourceTree = "<absolute>"; };
+		764F5FEAA14F47B8B52D308C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugTimer.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp; sourceTree = "<absolute>"; };
+		76D7CE685485490A8632B690 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugEditorDelegate.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h; sourceTree = "<absolute>"; };
+		7CEBE8D7A4714AE0B6B33352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugAPIBase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp; sourceTree = "<absolute>"; };
+		80866FCC2EF7480F8231F6DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pluginview.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp; sourceTree = "<absolute>"; };
+		82FE67B5EC8642C4AFF4FC3D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = baseiids.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp; sourceTree = "<absolute>"; };
+		93C2E989E5994284A3815DE7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = coreiids.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp; sourceTree = "<absolute>"; };
+		96B2C4B83E6B4B8D926D09C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ustring.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp; sourceTree = "<absolute>"; };
+		99204EABB0574C39B7D8AC24 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugConstants.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h; sourceTree = "<absolute>"; };
+		9AA8D175D47E484C953B3434 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugWebView_mac.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm; sourceTree = "<absolute>"; };
+		9CE3C5602B8C43D6BFC0A3F8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fdebug.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp; sourceTree = "<absolute>"; };
+		9D72857AF6ED4EA18C553688 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugVST3_ProcessorBase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp; sourceTree = "<absolute>"; };
+		A25A02EC82A141449295E352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugPaths.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp; sourceTree = "<absolute>"; };
+		A2C76D8E1C39439C96E2248D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstcomponentbase.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp; sourceTree = "<absolute>"; };
+		A38B51828BC94270AEEA4E1F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "Roboto-Regular.ttf"; path = "resources/fonts/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		A3E7A63F2BF749B2B32CC4E1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugProcessor.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp; sourceTree = "<absolute>"; };
+		A53A87E401AB4E35A9F5A5C3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ArcadiaVoices.h; path = ArcadiaVoices.h; sourceTree = SOURCE_ROOT; };
+		A7C997AC8A3C4548893C01AD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugTimer.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp; sourceTree = "<absolute>"; };
+		ABA6E89C572C4F35AC93A13F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = resource.h; path = resources/resource.h; sourceTree = SOURCE_ROOT; };
+		AFB9BE30FBA94AF5A8F21A35 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = resource.h; path = resources/resource.h; sourceTree = SOURCE_ROOT; };
+		B2C2210037BE4CA4AFBF6B54 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vstparameters.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp; sourceTree = "<absolute>"; };
+		B57FE84D92014F258D81E04E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPlatform.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h; sourceTree = "<absolute>"; };
+		BEAB5D3CC28543D885284A94 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugMidi.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h; sourceTree = "<absolute>"; };
+		BF14EFB63F414BC6833E572F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugAU.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp; sourceTree = "<absolute>"; };
+		C1B6B5D4B4F84F92BC44D8C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPlatform.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h; sourceTree = "<absolute>"; };
+		C3BFE35F068A4218844EBEBB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = index.css; path = resources/web/assets/index.css; sourceTree = SOURCE_ROOT; };
+		C8074522078048FB83B0C5B4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ArcadiaVoices.cpp; path = ArcadiaVoices.cpp; sourceTree = SOURCE_ROOT; };
+		D23B99D917E44CCB92CA5F1B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fobject.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp; sourceTree = "<absolute>"; };
+		D30BE45F03EE4A8B8B2C06DE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugWebViewEditorDelegate.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm; sourceTree = "<absolute>"; };
+		D44CD9D0F1B148C2936C6EFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugLogger.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h; sourceTree = "<absolute>"; };
+		D484776FCB8941B3B4565FA3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugQueue.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h; sourceTree = "<absolute>"; };
+		D557228DD09C4EACBD2C1AF3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugTimer.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h; sourceTree = "<absolute>"; };
+		D9BCEC69D7324392BF458DE9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "dfx-au-utilities.c"; path = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c"; sourceTree = "<absolute>"; };
+		DA2EA23EDE4347A383FBADA5 /* AV-au */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; path = AV.component/Contents/MacOS/AV; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE80F78A62D54DE289A7728F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "Roboto-Regular.ttf"; path = "resources/fonts/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		E370F89A30FB4EA297D1EA28 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugWebView_mac.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm; sourceTree = "<absolute>"; };
+		E45FC54524194B15947A75E7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E9FDF4B3633245FF9CB603E8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugPaths.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm; sourceTree = "<absolute>"; };
+		EA5A33F83F594F89BD6C706A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugAPIBase.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h; sourceTree = "<absolute>"; };
+		EC930767F4D14F33B97A80C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ArcadiaVoices.cpp; path = ArcadiaVoices.cpp; sourceTree = SOURCE_ROOT; };
+		EF40335FDBAD4283A8246B04 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = commoniids.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp; sourceTree = "<absolute>"; };
+		F08FB8800FC74CE1ABBD9998 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugPaths.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h; sourceTree = "<absolute>"; };
+		F241C81B509D4BCBA8C52D42 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugMidi.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h; sourceTree = "<absolute>"; };
+		F30C816874E04372A85E3162 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugParameter.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp; sourceTree = "<absolute>"; };
+		F35F748E3A524003B4CAAE50 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugQueue.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h; sourceTree = "<absolute>"; };
+		F4E0B11C69BC43A69364D1E9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IPlugVST3.cpp; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp; sourceTree = "<absolute>"; };
+		F96619047C5848A2A391EA6A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IPlugParameter.h; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h; sourceTree = "<absolute>"; };
+		FD081A19E00F4B109773B854 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = IPlugWebViewEditorDelegate.mm; path = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400A4E33934C49E88F58E444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B93973AB2174D5B9E89EC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA549AA83DC423CBD8EFE97 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A53A87E401AB4E35A9F5A5C3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */,
+				ABA6E89C572C4F35AC93A13F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */,
+				EA5A33F83F594F89BD6C706A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */,
+				99204EABB0574C39B7D8AC24 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */,
+				76D7CE685485490A8632B690 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */,
+				D44CD9D0F1B148C2936C6EFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */,
+				F241C81B509D4BCBA8C52D42 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */,
+				1A0FA30D11B34456B097FF96 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */,
+				444FDC65C50D471CAEB2DD61 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */,
+				B57FE84D92014F258D81E04E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */,
+				2BBC9CC4F0134F8EB4A881CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */,
+				0FA5ECF3CB034DC5A311DBFE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */,
+				F35F748E3A524003B4CAAE50 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */,
+				5449FFA109EC4899A476EA31 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */,
+				2A59CB24DF7B49F79C13E370 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */,
+				1669AC3061A94C3B90FD55DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1B8C91EB2A9A4FA89C419E93 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				362F5B387C594014A856FC83 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.h */,
+				AFB9BE30FBA94AF5A8F21A35 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/resource.h */,
+				31FC88D6792648589315E748 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.h */,
+				4A4BBF7696094BE981E09A1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugConstants.h */,
+				4DBE1289635F4A899256F101 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugEditorDelegate.h */,
+				445F2D65016F4302AD085311 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugLogger.h */,
+				BEAB5D3CC28543D885284A94 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugMidi.h */,
+				F96619047C5848A2A391EA6A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.h */,
+				F08FB8800FC74CE1ABBD9998 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.h */,
+				C1B6B5D4B4F84F92BC44D8C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPlatform.h */,
+				3C9A4A81D2D44160A7C212A0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.h */,
+				3B3A2CA5A7564EB18455B6E0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.h */,
+				D484776FCB8941B3B4565FA3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugQueue.h */,
+				5859D15C261141B68F44C2E5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugStructs.h */,
+				D557228DD09C4EACBD2C1AF3 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.h */,
+				1070E7977D2E4642B081DA98 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugUtilities.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2128EFF61A7D4953945B57AD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC930767F4D14F33B97A80C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */,
+				82FE67B5EC8642C4AFF4FC3D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp */,
+				9CE3C5602B8C43D6BFC0A3F8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp */,
+				D23B99D917E44CCB92CA5F1B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp */,
+				060CEBBDC8734327A8255FE6 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp */,
+				21DBDED5980249F8BDC02D03 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp */,
+				45DD337D21594AE7808C7E1D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp */,
+				93C2E989E5994284A3815DE7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp */,
+				6DA35183E17F47449586E50B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp */,
+				96B2C4B83E6B4B8D926D09C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp */,
+				EF40335FDBAD4283A8246B04 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp */,
+				80866FCC2EF7480F8231F6DF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp */,
+				11A365513055462CA28AD23B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp */,
+				74795C2554A84DD591C65911 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp */,
+				4DA99EB8F12947BA8A6892AF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp */,
+				00E1D26C7751471690C08EBC /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp */,
+				A2C76D8E1C39439C96E2248D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp */,
+				594231BE1D0D484AB33BDE17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp */,
+				B2C2210037BE4CA4AFBF6B54 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp */,
+				2BF05CBDDAC94EF8A72EC8CD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp */,
+				D30BE45F03EE4A8B8B2C06DE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */,
+				9AA8D175D47E484C953B3434 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */,
+				5690818D31864D79BE449B17 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */,
+				F30C816874E04372A85E3162 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */,
+				3C7BC5FF07F244E69335B208 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */,
+				4A83ADFEB3F844B69170A259 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */,
+				1900B7029C224A16BE28395F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */,
+				0959D8D04102436C80985AFD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */,
+				764F5FEAA14F47B8B52D308C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */,
+				F4E0B11C69BC43A69364D1E9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp */,
+				9D72857AF6ED4EA18C553688 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3086A1F9A1AF4CB58AB2F372 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		62A464D7BC4D4DC2805B4FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2EA23EDE4347A383FBADA5 /* AV-au */,
+				1B36185FAD4F486CAD0ADC77 /* AV-vst3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		909B0CCABF4845FCBA47849D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E12C53F9C9A44942B22C3C01 /* CMake Rules */,
+				2EDF83A375AF4F9689C2AB84 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		ABBA966F5969412682973461 /* AV-vst3 */ = {
+			isa = PBXGroup;
+			children = (
+				0BA549AA83DC423CBD8EFE97 /* Header Files */,
+				2128EFF61A7D4953945B57AD /* Source Files */,
+				4FA0139929894D7CAE4CA878 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */,
+				A38B51828BC94270AEEA4E1F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */,
+				C3BFE35F068A4218844EBEBB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */,
+				0E0DDF30670B4D3AB97FE5C8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */,
+				0F18FE4B169740FDA2283C2D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */,
+			);
+			name = "AV-vst3";
+			sourceTree = "<group>";
+		};
+		CEAA89DC8BB44D36B1703A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8595C9626B4435FA2C34F6E = {
+			isa = PBXGroup;
+			children = (
+				909B0CCABF4845FCBA47849D /* ALL_BUILD */,
+				ECD2D8865C8E43DB8692453D /* AV-au */,
+				ABBA966F5969412682973461 /* AV-vst3 */,
+				62A464D7BC4D4DC2805B4FDD /* Products */,
+				CEAA89DC8BB44D36B1703A0E /* Frameworks */,
+				3086A1F9A1AF4CB58AB2F372 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		E12C53F9C9A44942B22C3C01 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ECD2D8865C8E43DB8692453D /* AV-au */ = {
+			isa = PBXGroup;
+			children = (
+				1B8C91EB2A9A4FA89C419E93 /* Header Files */,
+				FE69E224BC9F40CA9DB7AF87 /* Source Files */,
+				E45FC54524194B15947A75E7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/CMakeLists.txt */,
+				DE80F78A62D54DE289A7728F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */,
+				23A74683BF5F416D9D42E414 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */,
+				4334779C38DF483E88892FD0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */,
+				6A16C32D56F54FD5AFB3932A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */,
+			);
+			name = "AV-au";
+			sourceTree = "<group>";
+		};
+		FE69E224BC9F40CA9DB7AF87 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8074522078048FB83B0C5B4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */,
+				BF14EFB63F414BC6833E572F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp */,
+				385797A5A7FC46E29E29CCE4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm */,
+				D9BCEC69D7324392BF458DE9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c */,
+				FD081A19E00F4B109773B854 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */,
+				E370F89A30FB4EA297D1EA28 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */,
+				7CEBE8D7A4714AE0B6B33352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */,
+				6623F7B67B1C480680DDB5A2 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */,
+				A25A02EC82A141449295E352 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */,
+				E9FDF4B3633245FF9CB603E8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */,
+				08A4A57D992E4E31983273B1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */,
+				A3E7A63F2BF749B2B32CC4E1 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */,
+				A7C997AC8A3C4548893C01AD /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88A2459D9684456ABB13CA93 /* AV-vst3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197AECCB711543BBA60E8E30 /* Build configuration list for PBXNativeTarget "AV-vst3" */;
+			buildPhases = (
+				6C4076444A886B83C18B4C43 /* CMake PreBuild Rules */,
+				7C38B5EC3BB54D1293FE4F73 /* Resources */,
+				178E7192C2474B34A483BACE /* Copy files */,
+				ABCD5AA52194466FBEE5F0C7 /* Copy files */,
+				B30FF7D9CF3945B1A5371536 /* Sources */,
+				6B93973AB2174D5B9E89EC02 /* Frameworks */,
+				D44604084529C1E12162B579 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCECFA35A2AE487B8407C35A /* PBXTargetDependency */,
+			);
+			name = "AV-vst3";
+			productName = "AV-vst3";
+			productReference = 1B36185FAD4F486CAD0ADC77 /* AV-vst3 */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9D97123604986FDB7625F949 /* AV-au */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EBD950DFC034939A75E5293 /* Build configuration list for PBXNativeTarget "AV-au" */;
+			buildPhases = (
+				8B171E78FAEDD82FC8492460 /* CMake PreBuild Rules */,
+				378803E2D67A43B5878E6E84 /* Resources */,
+				D8B19672128042BAAF3AD30E /* Copy files */,
+				2D4D715DB31E4A0081BB79FE /* Copy files */,
+				9CE268F7E5184B1E8EC7C560 /* Sources */,
+				400A4E33934C49E88F58E444 /* Frameworks */,
+				61451E93D30075AC5A2C4EFD /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9925824D8F342C69A55E27D /* PBXTargetDependency */,
+			);
+			name = "AV-au";
+			productName = "AV-au";
+			productReference = DA2EA23EDE4347A383FBADA5 /* AV-au */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D6A0F6DD1704399BB14D341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 874B585F3BB24E5B8814B760 /* Build configuration list for PBXProject "AV" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				8F9082D637484BE2BEA6AE6F /* Debug */,
+				9D111F0F955E406A88B83DC2 /* Release */,
+				05B614DD18E44F7A8F5F8AF0 /* MinSizeRel */,
+				057B039503E14A59A555BBC8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D8595C9626B4435FA2C34F6E;
+			projectDirPath = /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices;
+			projectRoot = "";
+			targets = (
+				302A5B0BAE8C7C68EB40A3EF /* ALL_BUILD */,
+				9D97123604986FDB7625F949 /* AV-au */,
+				88A2459D9684456ABB13CA93 /* AV-vst3 */,
+				B92BEEC8AA20A84DCC8DDEEE /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F444448400DDCDCEF3C44B /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  make -f /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  make -f /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  make -f /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  make -f /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		61451E93D30075AC5A2C4EFD /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}","${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist","$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)","$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)"			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/Components
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Debug/AV.component /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/Components
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release/AV.component /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/Components
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/MinSizeRel/AV.component /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/Components
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/RelWithDebInfo/AV.component /Users/jfachriz/Library/Audio/Plug-Ins/Components/AV.component
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6C4076444A886B83C18B4C43 /* CMake PreBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "CMake PreBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8B171E78FAEDD82FC8492460 /* CMake PreBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "CMake PreBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/../../copy_web_resources.sh
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D44604084529C1E12162B579 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}","${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist","$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)","$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)"			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/VST3
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Debug/AV.vst3 /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/VST3
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release/AV.vst3 /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/VST3
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/MinSizeRel/AV.vst3 /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  /usr/local/bin/cmake -E echo [iPlug2]\\ Copying\\ plugin:\\ /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E make_directory /Users/jfachriz/Library/Audio/Plug-Ins/VST3
+  /usr/local/bin/cmake -E rm -rf /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+  /usr/local/bin/cmake -E copy_directory /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/RelWithDebInfo/AV.vst3 /Users/jfachriz/Library/Audio/Plug-Ins/VST3/AV.vst3
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		EE1EB3217E3B7FFA28475909 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		378803E2D67A43B5878E6E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8322370DDE46EFB3CCF401 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C38B5EC3BB54D1293FE4F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93979F3288C4FED8CE582E5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/fonts/Roboto-Regular.ttf */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CE268F7E5184B1E8EC7C560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DC4E981C0B49508C7C959E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */,
+				7DE1A2F2ADF449ABB185A70F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU.cpp */,
+				C7B5325FA9674DB2B576C1B8 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/IPlugAU_view_factory.mm */,
+				410B6250977B4B05B809F5BE /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2/dfx-au-utilities.c */,
+				25E2933E69DC409D82F41538 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */,
+				5C1DE6C78D4D4D53A94FE46D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */,
+				788189BDADC848198F7A2833 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */,
+				790757DC1C9044EA8EBFB693 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */,
+				9775CD17A2354C6F85219F5B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */,
+				2F22B280B16547F791533238 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */,
+				017283137CCD4B59AB8A6844 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */,
+				99031AAC48B04BEF81DC3C89 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */,
+				678522D878384A42B9490DAA /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B30FF7D9CF3945B1A5371536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9644B1C76CEE4A7F8B90E2C9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/ArcadiaVoices.cpp */,
+				90C1D08EE9CB4500ACAB1312 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/baseiids.cpp */,
+				9D4F444851114E069279832D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fdebug.cpp */,
+				D946882F36E3489CBF4E40D4 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fobject.cpp */,
+				216BD624397D42F2BE1F334F /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/fstring.cpp */,
+				3E2AD5FC198A4B27983912FB /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/source/updatehandler.cpp */,
+				43C9EA1060F549CEBDC9B834 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base/thread/source/flock.cpp */,
+				F5F01DF8D7ED4F9C9E156EB9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/coreiids.cpp */,
+				7C0A099801C74A189A52D6B5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.cpp */,
+				C0B5DF932C894232BDD2DD26 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ustring.cpp */,
+				0312BD6A61184A328137FB43 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/commoniids.cpp */,
+				CFC242F832EC451EA0D225EF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/common/pluginview.cpp */,
+				741BF7E89AC84BF9AF0F1541 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/macmain.cpp */,
+				D448E79A9A104951BB4DCE9E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/main/pluginfactory.cpp */,
+				6C86850A32684F9FA2068BAF /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstbus.cpp */,
+				C1E31193D689479397E7F79A /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponent.cpp */,
+				73F0FDDAE0684F82BF06B063 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstcomponentbase.cpp */,
+				5ECC7768ADBA4263B130BF8D /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp */,
+				4C669A1135124E5F94E5B849 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstparameters.cpp */,
+				BA84B908A9E249E989B4A5A5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstsinglecomponenteffect.cpp */,
+				C9A0024A6BD14AA6B5E2817E /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebViewEditorDelegate.mm */,
+				EEC4A5C3EFB3429DA1D23105 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView/IPlugWebView_mac.mm */,
+				B42A2E1C50084E87BE671564 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugAPIBase.cpp */,
+				B65F638EB4894A3DA8AA2FC5 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugParameter.cpp */,
+				E0924C99C30E41559CD8AF82 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.cpp */,
+				0B08026D98F94B1D92A917D7 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPaths.mm */,
+				674C41C58931463198FCF56B /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugPluginBase.cpp */,
+				1670EF534BAF4AE9B8478B79 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugProcessor.cpp */,
+				C834D6D895A8418EA248D3DA /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugTimer.cpp */,
+				CB1C1CF9DEDB4A2FB37D7844 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3.cpp */,
+				FD15ACB097794C6CACEF3B5C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3/IPlugVST3_ProcessorBase.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		178E7192C2474B34A483BACE /* Copy files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = web;
+			dstSubfolderSpec = 7;
+			files = (
+				ADBC8123FE8645BAB453640C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D4D715DB31E4A0081BB79FE /* Copy files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = web/assets;
+			dstSubfolderSpec = 7;
+			files = (
+				B581EA4CD66A463C9C2329B0 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */,
+				D520FB2CBDB446C4A0BC7C5C /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCD5AA52194466FBEE5F0C7 /* Copy files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = web/assets;
+			dstSubfolderSpec = 7;
+			files = (
+				B4939DBD19404F058BC1CBA9 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.css */,
+				5EF6F135C9284506B656F564 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/assets/index.js */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B19672128042BAAF3AD30E /* Copy files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = web;
+			dstSubfolderSpec = 7;
+			files = (
+				ACB7B572E3B841418C35A127 /* /Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources/web/index.html */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2912EB15666A4DFB83463AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88A2459D9684456ABB13CA93 /* AV-vst3 */;
+			targetProxy = A5E86EA2B1394969BB4BFBE3 /* PBXContainerItemProxy */;
+		};
+		436030F438104D2091F12447 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B92BEEC8AA20A84DCC8DDEEE /* ZERO_CHECK */;
+			targetProxy = 86A01BD1E6F64E2083C54E18 /* PBXContainerItemProxy */;
+		};
+		61930327314A4A4FB422BCA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D97123604986FDB7625F949 /* AV-au */;
+			targetProxy = 22435E77DB834385B683D458 /* PBXContainerItemProxy */;
+		};
+		BCECFA35A2AE487B8407C35A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B92BEEC8AA20A84DCC8DDEEE /* ZERO_CHECK */;
+			targetProxy = D742EC5B4F6E4F70A6612963 /* PBXContainerItemProxy */;
+		};
+		C9925824D8F342C69A55E27D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B92BEEC8AA20A84DCC8DDEEE /* ZERO_CHECK */;
+			targetProxy = FD725F57A7274071981C296C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		102DF090BEB5415FA1B9877D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_au_EXPORTS,"'OBJC_PREFIX=vAV'",AU_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",NOMINMAX,DEBUG,_DEBUG,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-au.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CFLAGS = ("   -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework AudioUnit","-framework AudioToolbox","-framework CoreAudio","-framework CoreMIDI","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-au.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		13376181180040D1AF0D5C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3979750F8FDC4D89B78447B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		53DE25F958094D05B513C735 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		849C97E3C1C446A989A4C2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_vst3_EXPORTS,"'OBJC_PREFIX=vAV'",VST3_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",DEVELOPMENT,NOMINMAX,DEBUG,_DEBUG,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-vst3.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-vst3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		8D0A9634F929478A841D4A04 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_vst3_EXPORTS,"'OBJC_PREFIX=vAV'",VST3_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",RELEASE,NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-vst3.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-vst3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = MinSizeRel;
+		};
+		992043A1D0374B5F98BAF412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build";
+			};
+			name = Debug;
+		};
+		9BEDEEAB76FF472290C189E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_au_EXPORTS,"'OBJC_PREFIX=vAV'",AU_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-au.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework AudioUnit","-framework AudioToolbox","-framework CoreAudio","-framework CoreMIDI","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-au.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = RelWithDebInfo;
+		};
+		A0D2F06FDB7E4C31B7999744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_vst3_EXPORTS,"'OBJC_PREFIX=vAV'",VST3_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",RELEASE,NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-vst3.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-vst3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
+		};
+		A8F0771D76CA4C23AC423A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		ACEAFA351C8E467A905A4357 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B46CD36CDF5843B181C97343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BD02BF8C96F247E2B1539469 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_au_EXPORTS,"'OBJC_PREFIX=vAV'",AU_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-au.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework AudioUnit","-framework AudioToolbox","-framework CoreAudio","-framework CoreMIDI","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-au.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = MinSizeRel;
+		};
+		C54869C7B28742FBA629EEC9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C81C0FA2C8604D9998B4F621 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		D205DD5E88BF43DDADC88C29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_vst3_EXPORTS,"'OBJC_PREFIX=vAV'",VST3_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",RELEASE,NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-vst3.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/VST3,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/pluginterfaces,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/base,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-vst3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = RelWithDebInfo;
+		};
+		ECE8FA69032D44B4B94D2E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build";
+			};
+			name = Release;
+		};
+		F7131648B7A54F9C898E83B6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		FC31AEFEC2C44FD189099ABB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FD6780A6F30A46888E612E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = NO;
+				CONFIGURATION_BUILD_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",AV_au_EXPORTS,"'OBJC_PREFIX=vAV'",AU_API,"'IPLUG_EDITOR=1'","'IPLUG_DSP=1'",NOMINMAX,WEBVIEW_EDITOR_DELEGATE,NO_IGRAPHICS,IPLUG_WEBVIEW_REQUIRES_10_15,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/ArcadiaVoices/resources,"$(inherited)");
+				INFOPLIST_FILE = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/CMakeFiles/AV-au.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = BUNDLE;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fPIC -include '/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch' -Wno-deprecated-declarations ";
+				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework AudioUnit","-framework AudioToolbox","-framework CoreAudio","-framework CoreMIDI","-framework Cocoa","-framework WebKit","-framework CoreData","-framework CoreFoundation","-framework CoreServices","-framework Foundation","-lobjc","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AV;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/AUv2,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/libpng,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/WDL/zlib,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/IPlug/Extras/WebView,/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/iPlug2/Dependencies/Extras/nlohmann,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/build/AV-au.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		197AECCB711543BBA60E8E30 /* Build configuration list for PBXNativeTarget "AV-vst3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849C97E3C1C446A989A4C2C3 /* Debug */,
+				A0D2F06FDB7E4C31B7999744 /* Release */,
+				8D0A9634F929478A841D4A04 /* MinSizeRel */,
+				D205DD5E88BF43DDADC88C29 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1EBD950DFC034939A75E5293 /* Build configuration list for PBXNativeTarget "AV-au" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102DF090BEB5415FA1B9877D /* Debug */,
+				FD6780A6F30A46888E612E95 /* Release */,
+				BD02BF8C96F247E2B1539469 /* MinSizeRel */,
+				9BEDEEAB76FF472290C189E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F8039999EE74E30A7217F49 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46CD36CDF5843B181C97343 /* Debug */,
+				3979750F8FDC4D89B78447B6 /* Release */,
+				ACEAFA351C8E467A905A4357 /* MinSizeRel */,
+				C54869C7B28742FBA629EEC9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		576FCA2BC61F4D289EA1534C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13376181180040D1AF0D5C1D /* Debug */,
+				A8F0771D76CA4C23AC423A3D /* Release */,
+				53DE25F958094D05B513C735 /* MinSizeRel */,
+				FC31AEFEC2C44FD189099ABB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		874B585F3BB24E5B8814B760 /* Build configuration list for PBXProject "AV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992043A1D0374B5F98BAF412 /* Debug */,
+				ECE8FA69032D44B4B94D2E8E /* Release */,
+				F7131648B7A54F9C898E83B6 /* MinSizeRel */,
+				C81C0FA2C8604D9998B4F621 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D6A0F6DD1704399BB14D341 /* Project object */;
+}

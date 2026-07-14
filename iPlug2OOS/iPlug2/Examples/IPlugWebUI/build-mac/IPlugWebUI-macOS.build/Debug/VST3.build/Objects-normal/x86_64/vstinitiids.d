@@ -1,0 +1,42 @@
+dependencies: \
+  /Users/jfachriz/Documents/VST\ Plugins/iPlug2OOS/iPlug2/IPlug/IPlugOBJCPrefix.pch \
+  /Users/jfachriz/Documents/VST\ Plugins/iPlug2OOS/iPlug2/Dependencies/IPlug/VST3_SDK/public.sdk/source/vst/vstinitiids.cpp \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/funknown.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/fplatform.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ftypes.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/smartpointer.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/iplugincompatibility.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ibstream.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstaudioprocessor.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstcomponent.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/ipluginbase.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/fstrdefs.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/vsttypes.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/falignpush.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/falignpop.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/vstspeaker.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstautomationstate.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstchannelcontextinfo.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstattributes.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstcontextmenu.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstdataexchange.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivsteditcontroller.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstevents.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstprocesscontext.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstnoteexpression.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivsthostapplication.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstmessage.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstinterappaudio.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstmidimapping2.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstmidilearn.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstparameterchanges.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstparameterfunctionname.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstphysicalui.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstpluginterfacesupport.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstplugview.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstprefetchablesupport.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstremapparamid.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstrepresentation.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivsttestplugprovider.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/base/istringresult.h \
+  ../../../Dependencies/IPlug/VST3_SDK/pluginterfaces/vst/ivstunits.h
