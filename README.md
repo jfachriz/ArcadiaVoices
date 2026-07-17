@@ -1,6 +1,6 @@
 # Arcadia Voices (AV) - Multi-Voice Pitch Delay Plugin
 
-![Arcadia Voices](https://github.com/jfachriz/ArcadiaVoices/blob/main/Assets/AV-1.png)
+![Arcadia Voices](https://via.placeholder.com/800x400/2a2a2a/ffffff?text=Arcadia+Voices+Plugin)
 
 **A professional stereo pitch-shifting delay plugin with tempo sync, modulation, and live pitch detection.**
 
@@ -182,9 +182,8 @@ Website: https://archangeldsp.com
 
 ### Getting Help
 
-- **Documentation**: This README and in-plugin tooltips
+- **Documentation**: This README and GUIDE.md
 - **Presets**: Explore factory presets for inspiration
-- **Community**: Join our user forum (link coming soon)
 
 ### Reporting Issues
 
