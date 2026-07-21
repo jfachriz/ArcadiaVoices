@@ -65,7 +65,7 @@ jobs:
     - name: Install Linux Dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y libx11-dev libfreetype6-dev libxinerama-dev libxcursor-dev libxext-dev libxrandr-dev libasound2-dev libjack-jackd2-dev libgl1-mesa-dev libwebkit2gtk-4.0-dev libcurl4-gnutls-dev
+        sudo apt-get install -y libx11-dev libfreetype6-dev libxinerama-dev libxcursor-dev libxext-dev libxrandr-dev libasound2-dev libjack-jackd2-dev libgl1-mesa-dev libwebkit2gtk-4.1-dev libcurl4-gnutls-dev
         
     - name: Configure CMake
       run: cmake -S iPlug2OOS -B build -DCMAKE_BUILD_TYPE=Release
