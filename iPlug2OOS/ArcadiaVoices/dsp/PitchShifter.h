@@ -2,112 +2,112 @@
 #include "CircularBuffer.h"
 #include <cmath>
 
-// Pitch shifter using dual-read-pointer + equal-power crossfade technique.
+// Pitch shifter using dual-pointer rotating grain technique.
 //
-// Two read windows into a shared CircularBuffer, offset by half a grain.
-// The read offset from the write pointer changes at rate (1 - pitchRatio).
-// At ratio=1.0 (no shift), the offset stays constant = pure delay.
-// At ratio>1.0, the offset shrinks → read catches up to write → higher pitch.
-// At ratio<1.0, the offset grows → read falls further behind → lower pitch.
-//
-// When the offset crosses a grain boundary, the crossfade swaps between
-// the two windows to hide the discontinuity.
+// Uses two read pointers into a shared CircularBuffer.
+// A master phase from 0 to 1 drives both pointers.
+// Pointer 1 phase = phase
+// Pointer 2 phase = phase + 0.5 (wrapped)
+// Pointers only wrap when their sine-based envelope is exactly 0,
+// ensuring a perfectly click-free pitch shift.
 class PitchShifter {
 public:
     PitchShifter() : mPitchRatio(1.0f), mSampleRate(44100.0f),
-                     mGrainSize(0.0f), mHalfGrain(0.0f),
-                     mOffset(0.0f) {}
+                     mGrainSize(0.0f), mTargetGrainSize(0.0f),
+                     mPhase(0.0f) {}
 
     void Init(float sampleRate) {
         mSampleRate = sampleRate;
-        SetGrainSizeMs(30.0f);
-        mTargetGrainSize = mGrainSize;
-        mOffset = 0.0f;
+        UpdateAdaptiveGrainSize();
+        mGrainSize = mTargetGrainSize; // Snap to target instantly
+        mPhase = 0.0f;
     }
 
     // Set pitch shift ratio: 1.0 = no shift, 2.0 = up octave, 0.5 = down octave
     void SetPitchRatio(float ratio) {
         mPitchRatio = ratio;
+        UpdateAdaptiveGrainSize();
     }
 
     // Set pitch shift in semitones (-24 to +24)
     void SetSemitones(int semitones) {
         mPitchRatio = std::pow(2.0f, semitones / 12.0f);
+        UpdateAdaptiveGrainSize();
     }
 
-    // Set grain size in milliseconds (typical range 15-60ms)
-    // Instantly sets the grain size
+    // Set grain size in milliseconds (instantly sets)
     void SetGrainSizeMs(float ms) {
         mGrainSize = (ms / 1000.0f) * mSampleRate;
         mTargetGrainSize = mGrainSize;
-        mHalfGrain = mGrainSize * 0.5f;
     }
 
-    // Smoothly update target grain size (for adaptive grain sizing)
+    // Smoothly update target grain size
     void UpdateTargetGrainSizeMs(float ms) {
         mTargetGrainSize = (ms / 1000.0f) * mSampleRate;
     }
 
-    // Process one sample: reads from delayLine at (delayOffset + readOffset)
-    // Window A reads from the base position; Window B reads half-grain ahead.
-    // Returns the pitch-shifted sample.
+    // Process one sample
     inline float Process(const CircularBuffer& delayLine, float delayOffset) {
         // Smoothly interpolate grain size towards target
         if (std::abs(mTargetGrainSize - mGrainSize) > 0.1f) {
-            mGrainSize += (mTargetGrainSize - mGrainSize) * 0.01f; // 100-sample time constant
-            mHalfGrain = mGrainSize * 0.5f;
+            mGrainSize += (mTargetGrainSize - mGrainSize) * 0.0001f; 
         }
 
-        // The extra offset from pitch shifting changes at rate (1 - ratio).
-        // At ratio=1.0: offset stays constant (pure delay).
-        const float totalOffset = delayOffset + mOffset;
-
-        // Two overlapping windows offset by half a grain
-        const float readA = delayLine.Read(totalOffset);
-        const float readB = delayLine.Read(totalOffset + mHalfGrain);
-
-        // Compute crossfade phase from the offset within the grain window
-        float phaseInGrain = mOffset;
-        // Wrap to [0, grainSize) for phase computation
-        while (phaseInGrain >= mGrainSize) phaseInGrain -= mGrainSize;
-        while (phaseInGrain < 0.0f) phaseInGrain += mGrainSize;
-        const float crossfadePhase = phaseInGrain / mGrainSize; // [0, 1)
-
-        // Raised-cosine equal-power crossfade
-        const float cf = 0.5f * (1.0f - std::cos(2.0f * 3.14159265f * crossfadePhase));
-        const float gainA = std::sqrt(1.0f - cf);
-        const float gainB = std::sqrt(cf);
-
-        const float out = readA * gainA + readB * gainB;
-
-        // Advance the pitch offset: changes at rate (1 - ratio)
-        // At ratio=1.0: stays the same. At ratio=2.0: decreases by 1/sample (reads newer data → higher pitch)
-        mOffset += (1.0f - mPitchRatio);
-
-        // Keep offset in a reasonable range (±grainSize around 0).
-        // When it crosses a grain boundary, the windows swap roles seamlessly
-        // because the crossfade phase also wraps.
-        if (mOffset >= mGrainSize) {
-            mOffset -= mGrainSize;
-        } else if (mOffset <= -mGrainSize) {
-            mOffset += mGrainSize;
-        }
-
-        return out;
+        // Calculate phase delta
+        float deltaPhase = (1.0f - mPitchRatio) / mGrainSize;
+        
+        mPhase += deltaPhase;
+        
+        // Wrap master phase to [0, 1)
+        while (mPhase >= 1.0f) mPhase -= 1.0f;
+        while (mPhase < 0.0f) mPhase += 1.0f;
+        
+        float p1 = mPhase;
+        float p2 = mPhase + 0.5f;
+        if (p2 >= 1.0f) p2 -= 1.0f;
+        
+        float offset1 = p1 * mGrainSize;
+        float offset2 = p2 * mGrainSize;
+        
+        float read1 = delayLine.Read(delayOffset + offset1);
+        float read2 = delayLine.Read(delayOffset + offset2);
+        
+        // Equal power crossfade envelopes using sine
+        // sin^2(x) + cos^2(x) = 1
+        float env1 = std::sin(p1 * 3.14159265f);
+        float env2 = std::sin(p2 * 3.14159265f);
+        
+        return read1 * env1 + read2 * env2;
     }
 
     // Reset all state
     void Reset() {
-        mOffset = 0.0f;
+        mPhase = 0.0f;
     }
 
     float CurrentRatio() const { return mPitchRatio; }
 
 private:
+    void UpdateAdaptiveGrainSize() {
+        float ms = 30.0f; // Default for no pitch shift
+        if (mPitchRatio < 1.0f) {
+            // Pitching down: larger grains to preserve bass (up to 55ms)
+            float factor = (1.0f - mPitchRatio) / 0.75f; // 0 to 1 for -24st
+            if (factor > 1.0f) factor = 1.0f;
+            ms = 30.0f + (factor * 25.0f);
+        } else if (mPitchRatio > 1.0f) {
+            // Pitching up: smaller grains for transients (down to 20ms)
+            float factor = (mPitchRatio - 1.0f) / 3.0f; // 0 to 1 for +24st
+            if (factor > 1.0f) factor = 1.0f; 
+            ms = 30.0f - (factor * 10.0f);
+        }
+        
+        mTargetGrainSize = (ms / 1000.0f) * mSampleRate;
+    }
+
     float mPitchRatio;
     float mSampleRate;
     float mGrainSize;
     float mTargetGrainSize;
-    float mHalfGrain;
-    float mOffset; // pitch offset from base delay, changes at (1 - ratio) per sample
+    float mPhase; 
 };
