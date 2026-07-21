@@ -178,7 +178,7 @@ For license terms and usage rights, please refer to the included LICENSE file or
 
 **Archangel DSP**
 Support: archangeldsp@gmail.com
-Website: https://archangeldsp.com
+Website: https://archangeldsp.sbs
 
 ## 🙏 Support & Feedback
 
@@ -243,4 +243,4 @@ Special thanks to our users and community for inspiration and feedback!
 **Arcadia Voices** - Transform your sound with musical delays
 **© 2026 Archangel DSP** | All rights reserved
 
-[Download Now](https://archangeldsp.com/arcadia-voices) | [User Guide](https://github.com/jfachriz/ArcadiaVoices/blob/main/guidelines/GUIDE.md) | [Support](mailto:archangeldsp@gmail.com)
+[Download Now](https://archangeldsp.sbs/arcadia-voices) | [User Guide](https://github.com/jfachriz/ArcadiaVoices/blob/main/guidelines/GUIDE.md) | [Support](mailto:archangeldsp@gmail.com)
