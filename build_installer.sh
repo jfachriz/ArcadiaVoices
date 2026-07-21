@@ -8,8 +8,12 @@ PRODUCT_NAME="AV"                          # Used in titles / dmg name
 VERSION="1.0"
 IDENTIFIER_PREFIX="com.ArchangelDSP.AV"     # Reverse-DNS prefix
 
-SRC_AU="/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release/AV.component"             # Path to your .component file
-SRC_VST3="/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/out/Release/AV.vst3"                # Path to your .vst3 bundle
+# Pre-requisite rule from AGENTS.md: Always build web resources first
+echo "==> Building web UI resources..."
+./copy_web_resources.sh
+
+SRC_AU="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/AV.component"
+SRC_VST3="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/AV.vst3"
 
 # Default install locations are RELATIVE (no leading slash).
 # This lets Installer.app's native "Install for all users / just me" choice
@@ -97,12 +101,24 @@ productbuild \
   --package-path "$WORKDIR" \
   "$FINAL_PKG"
 
+echo "==> Generating rounded icon from Assets/1.png"
+if [ -f "Assets/1.png" ]; then
+  swift make_rounded_icon.swift Assets/1.png "$WORKDIR"
+  iconutil -c icns "$WORKDIR/icon.iconset" -o "$WORKDIR/VolumeIcon.icns"
+fi
+
 echo "==> Wrapping into .dmg"
 DMG_ROOT="$WORKDIR/dmg_root"
 mkdir -p "$DMG_ROOT"
 cp "$FINAL_PKG" "$DMG_ROOT/"
 
+if [ -f "$WORKDIR/VolumeIcon.icns" ]; then
+  cp "$WORKDIR/VolumeIcon.icns" "$DMG_ROOT/.VolumeIcon.icns"
+  SetFile -a C "$DMG_ROOT" || true
+fi
+
 FINAL_DMG="$OUTDIR/${PRODUCT_NAME}-${VERSION}.dmg"
+rm -f "$FINAL_DMG"
 hdiutil create \
   -volname "${PRODUCT_NAME} ${VERSION}" \
   -srcfolder "$DMG_ROOT" \
