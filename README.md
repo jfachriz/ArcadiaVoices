@@ -2,6 +2,8 @@
 
 ![Arcadia Voices](https://github.com/jfachriz/ArcadiaVoices/blob/main/Assets/Delay_UI.png)
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/jfachriz)
+
 **A professional stereo pitch-shifting delay plugin with tempo sync, modulation, and live pitch detection.**
 
 ## 🎯 What is Arcadia Voices?
@@ -179,6 +181,11 @@ Support: archangeldsp@gmail.com
 Website: https://archangeldsp.com
 
 ## 🙏 Support & Feedback
+
+### ❤️ Support the Project
+
+If you find Arcadia Voices useful, please consider supporting its development!
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/jfachriz)
 
 ### Getting Help
 
