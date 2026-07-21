@@ -5,6 +5,7 @@ import RightPanel from './components/pedal/RightPanel';
 import { NOTE_DIVISIONS, type KnobValues, type SavedPreset } from './components/pedal/types';
 import useBridge from './useBridge';
 import { subscribeToMessageId, sendArbitraryMsg } from './iplugBridge';
+import textImg from '../assets/text.png';
 
 // Convert real DSP units back to UI knob 0-100 space
 function msToKnob(ms: number): number {
@@ -212,13 +213,18 @@ export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950 flex items-center justify-center p-8 font-sans">
       <div
-        className="relative w-full max-w-[1000px] aspect-[4/3] sm:aspect-[1.4] rounded-[32px] p-6 shadow-2xl overflow-hidden select-none border border-white/10"
+        className="relative w-full max-w-[1000px] aspect-[4/3] sm:aspect-[1.35] rounded-[32px] pt-4 pb-6 px-6 shadow-2xl overflow-hidden select-none border border-white/10"
         style={{
           background: 'linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 40%, #1a1a1a 100%)',
           boxShadow: '0 30px 70px rgba(0,0,0,0.9), inset 0 4px 6px rgba(255,255,255,0.15), inset 0 -4px 6px rgba(0,0,0,0.4), 4px 0 16px rgba(0,0,0,0.5), -4px 0 16px rgba(0,0,0,0.5)'
         }}
       >
-        <div className="w-full h-full flex flex-col gap-4">
+        <div className="w-full h-full flex flex-col gap-3">
+          {/* Top Outer Enclosure Header with Text Logo directly above screen logo */}
+          <div className="w-full flex items-center justify-center pt-1 pb-0.5">
+            <img src={textImg} alt="Text Logo" className="h-8 sm:h-10 object-contain filter brightness-125 drop-shadow-lg opacity-95" />
+          </div>
+
           <div className="flex-1 flex gap-4">
             <LeftPanel
               syncMode={syncMode}
