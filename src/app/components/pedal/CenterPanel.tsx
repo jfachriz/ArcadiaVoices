@@ -36,7 +36,7 @@ export default function CenterPanel({
   onPitchLChange, onPitchRChange
 }: CenterPanelProps) {
   return (
-    <div className="flex-1 flex flex-col gap-0 rounded-[16px] overflow-hidden bg-white shadow-sm">
+    <div className="flex-1 flex flex-col gap-0 rounded-[16px] overflow-hidden bg-[#12141c] border border-white/10 shadow-lg">
       <OLEDScreen
         powerOn={powerOn}
         activeKnob={activeKnob}
@@ -56,7 +56,7 @@ export default function CenterPanel({
         onDeletePreset={onDeletePreset}
       />
 
-      <div className="h-[45%] flex items-center justify-center gap-12 rounded-b-[16px] relative shadow-[inset_0_4px_10px_rgba(0,0,0,0.05)]">
+      <div className="h-[45%] flex items-center justify-center gap-12 rounded-b-[16px] relative bg-[#0c0d12] shadow-[inset_0_4px_10px_rgba(0,0,0,0.6)]">
         <PowerLED powerOn={powerOn} />
         <Knob type="black" label="left" size="sm" value={pitchLValue} onChange={onPitchLChange} />
         <OnOffButton

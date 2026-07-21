@@ -139,28 +139,20 @@ export default function Knob({
         }}
       >
         <div
-          className={`absolute inset-0 rounded-full border-[1.5px] transition-transform duration-75 ${
-            type === 'white'
-              ? 'bg-gradient-to-br from-white to-[#e0e0e0] border-[#c0c0c0]'
-              : 'bg-gradient-to-b from-[#333] via-[#111] to-[#000] border-[#222]'
-          }`}
+          className="absolute inset-0 rounded-full border-[1.5px] border-white/10 transition-transform duration-75 bg-gradient-to-b from-[#3a3d45] via-[#1c1e24] to-[#0d0e12]"
           style={{
             transform: `rotate(${angle}deg)`,
-            boxShadow: type === 'white'
-              ? 'inset 0 2px 4px rgba(255,255,255,0.8), inset 0 -4px 6px rgba(0,0,0,0.1)'
-              : 'inset 0 4px 6px rgba(255,255,255,0.15), inset 0 -4px 6px rgba(0,0,0,0.4)'
+            boxShadow: 'inset 0 3px 5px rgba(255,255,255,0.15), inset 0 -4px 6px rgba(0,0,0,0.6), 0 4px 8px rgba(0,0,0,0.5)'
           }}
         >
           <div
-            className={`absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-[35%] rounded-full ${
-              type === 'white' ? 'bg-[#333]' : 'bg-white/90'
-            }`}
-            style={{ marginTop: type === 'white' ? '8%' : '8%' }}
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-[35%] rounded-full bg-[#f8f8ff]"
+            style={{ marginTop: '8%' }}
           ></div>
         </div>
       </div>
 
-      <span className={`${labelSizeMap[size]} text-gray-700 tracking-wide font-medium`}>{label}</span>
+      <span className={`${labelSizeMap[size]} text-[#94a0b5] tracking-widest uppercase font-semibold`}>{label}</span>
     </div>
   );
 }

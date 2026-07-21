@@ -210,11 +210,12 @@ export default function App() {
   }, [activeKnob, knobs]);
 
   return (
-    <div className="min-h-screen bg-[#f3f4f6] flex items-center justify-center p-8 font-sans">
+    <div className="min-h-screen bg-zinc-950 flex items-center justify-center p-8 font-sans">
       <div
-        className="relative w-full max-w-[1000px] aspect-[4/3] sm:aspect-[1.4] bg-[#d3d5d7] rounded-[32px] p-6 shadow-2xl overflow-hidden select-none"
+        className="relative w-full max-w-[1000px] aspect-[4/3] sm:aspect-[1.4] rounded-[32px] p-6 shadow-2xl overflow-hidden select-none border border-white/10"
         style={{
-          boxShadow: '0 30px 60px rgba(0,0,0,0.15), inset 0 2px 4px rgba(255,255,255,0.7), inset 0 -6px 12px rgba(0,0,0,0.1)'
+          background: 'linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 40%, #1a1a1a 100%)',
+          boxShadow: '0 30px 70px rgba(0,0,0,0.9), inset 0 4px 6px rgba(255,255,255,0.15), inset 0 -4px 6px rgba(0,0,0,0.4), 4px 0 16px rgba(0,0,0,0.5), -4px 0 16px rgba(0,0,0,0.5)'
         }}
       >
         <div className="w-full h-full flex flex-col gap-4">
