@@ -5,9 +5,7 @@
 #include "PresetManager.h"
 #include <cmath>
 #include <cstring>
-#include "IPlugConstants.h" // For iplug::sample
-
-using iplug::sample;
+#include <algorithm>
 
 // Top-level DSP orchestrator for Arcadia Voices.
 // Owns:
@@ -61,24 +59,24 @@ public:
     }
 
     // Process one audio block (stereo)
-    // inputs/outputs are arrays of sample* channels (2 channels for stereo)
+    // inputs/outputs are arrays of T* channels (2 channels for stereo)
     // nFrames = number of frames (samples per channel)
-    // 'sample' is double in iPlug2; we use double internally for precision,
-    // converting to float only for the DSP engine's buffer operations.
-    void ProcessBlock(sample** inputs, sample** outputs, int nFrames) {
+    // T is typically double (iPlug2 default) or float.
+    template <typename T>
+    void ProcessBlock(T** inputs, T** outputs, int nFrames) {
         // === BYPASS CHECK ===
         if (!mPowerOn) {
             // True bypass: dry signal passes through untouched.
             // Do not process delay/pitch/feedback at all.
             for (int c = 0; c < 2; c++) {
                 if (outputs[c] != inputs[c]) {
-                    std::memcpy(outputs[c], inputs[c], nFrames * sizeof(sample));
+                    std::memcpy(outputs[c], inputs[c], nFrames * sizeof(T));
                 }
             }
             return;
         }
 
-        // Process each frame (convert sample/double to float for DSP engine)
+        // Process each frame (convert to float for DSP engine)
         for (int s = 0; s < nFrames; s++) {
             const float inL = static_cast<float>(inputs[0][s]);
             const float inR = static_cast<float>(inputs[1][s]);
@@ -92,6 +90,21 @@ public:
                 mDetectCounter = 0;
                 mDetector[0].Detect();
                 mDetector[1].Detect();
+                
+                // Adaptive Grain Size:
+                // Period = 1.0 / frequency. We want grain size to be roughly 1-2 periods.
+                // 30ms is a safe default for non-pitched audio.
+                for (int ch = 0; ch < 2; ch++) {
+                    float freq = mDetector[ch].DetectedFreq();
+                    float confidence = mDetector[ch].Confidence();
+                    float targetGrainMs = 30.0f; // Default
+                    if (freq > 20.0f && confidence > 0.6f) { // If we have a confident pitch
+                        float periodMs = (1.0f / freq) * 1000.0f;
+                        // Use ~2 periods for grain size, bounded between 15ms and 60ms
+                        targetGrainMs = std::max(15.0f, std::min(60.0f, periodMs * 2.0f));
+                    }
+                    mVoice[ch].UpdateTargetGrainSizeMs(targetGrainMs);
+                }
             }
 
             // Process left and right channels independently
@@ -101,8 +114,8 @@ public:
             // Dry/wet mix
             const float mix = mMixPct * 0.01f;
             const float dry = 1.0f - mix;
-            outputs[0][s] = static_cast<sample>(inL * dry + wetL * mix);
-            outputs[1][s] = static_cast<sample>(inR * dry + wetR * mix);
+            outputs[0][s] = static_cast<T>(inL * dry + wetL * mix);
+            outputs[1][s] = static_cast<T>(inR * dry + wetR * mix);
         }
     }
 

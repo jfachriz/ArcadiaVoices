@@ -21,6 +21,7 @@ public:
     void Init(float sampleRate) {
         mSampleRate = sampleRate;
         SetGrainSizeMs(30.0f);
+        mTargetGrainSize = mGrainSize;
         mOffset = 0.0f;
     }
 
@@ -35,15 +36,28 @@ public:
     }
 
     // Set grain size in milliseconds (typical range 15-60ms)
+    // Instantly sets the grain size
     void SetGrainSizeMs(float ms) {
         mGrainSize = (ms / 1000.0f) * mSampleRate;
+        mTargetGrainSize = mGrainSize;
         mHalfGrain = mGrainSize * 0.5f;
+    }
+
+    // Smoothly update target grain size (for adaptive grain sizing)
+    void UpdateTargetGrainSizeMs(float ms) {
+        mTargetGrainSize = (ms / 1000.0f) * mSampleRate;
     }
 
     // Process one sample: reads from delayLine at (delayOffset + readOffset)
     // Window A reads from the base position; Window B reads half-grain ahead.
     // Returns the pitch-shifted sample.
     inline float Process(const CircularBuffer& delayLine, float delayOffset) {
+        // Smoothly interpolate grain size towards target
+        if (std::abs(mTargetGrainSize - mGrainSize) > 0.1f) {
+            mGrainSize += (mTargetGrainSize - mGrainSize) * 0.01f; // 100-sample time constant
+            mHalfGrain = mGrainSize * 0.5f;
+        }
+
         // The extra offset from pitch shifting changes at rate (1 - ratio).
         // At ratio=1.0: offset stays constant (pure delay).
         const float totalOffset = delayOffset + mOffset;
@@ -93,6 +107,7 @@ private:
     float mPitchRatio;
     float mSampleRate;
     float mGrainSize;
+    float mTargetGrainSize;
     float mHalfGrain;
     float mOffset; // pitch offset from base delay, changes at (1 - ratio) per sample
 };

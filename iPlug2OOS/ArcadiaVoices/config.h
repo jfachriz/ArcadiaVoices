@@ -1,7 +1,7 @@
 #define PLUG_NAME "AV"
 #define PLUG_MFR "Archangel DSP"
-#define PLUG_VERSION_HEX 0x00010000
-#define PLUG_VERSION_STR "0.1.0"
+#define PLUG_VERSION_HEX 0x00010100
+#define PLUG_VERSION_STR "1.1.0"
 #define PLUG_UNIQUE_ID 'Avce'
 #define PLUG_MFR_ID 'Adsp'
 #define PLUG_URL_STR "https://archangel.dsp"

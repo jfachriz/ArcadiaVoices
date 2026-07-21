@@ -4,6 +4,7 @@
 #include "ModLFO.h"
 #include "SoftClipper.h"
 #include "ParamSmoother.h"
+#include "Filter.h"
 
 // Per-channel delay voice: owns the delay buffer, pitch shifter,
 // LFO modulation, and feedback loop for one audio channel.
@@ -25,6 +26,19 @@ public:
         mLFO.SetWaveform(0);   // sine
         mClipper.SetThreshold(1.0f);
         mTimeSmoother.Init(sampleRate, 30.0f); // 30ms smoothing for time changes
+        
+        mFeedbackLPF.Init(sampleRate);
+        mFeedbackLPF.SetType(OnePoleFilter::Type::LowPass);
+        mFeedbackLPF.SetCutoff(3000.0f); // Analog delay style roll-off
+
+        mFeedbackHPF.Init(sampleRate);
+        mFeedbackHPF.SetType(OnePoleFilter::Type::HighPass);
+        mFeedbackHPF.SetCutoff(200.0f); // Tame muddy low-end buildup
+
+        mAntiAliasLPF.Init(sampleRate);
+        mAntiAliasLPF.SetType(OnePoleFilter::Type::LowPass);
+        mAntiAliasLPF.SetCutoff(20000.0f); // Default to Nyquist/passthrough
+
         mFeedback = 0.0f;
         mLastOutput = 0.0f;
     }
@@ -55,6 +69,20 @@ public:
     void SetPitchSemitones(int semitones) {
         mPitchSemitones = static_cast<float>(semitones);
         mPitchShifter.SetSemitones(semitones);
+
+        // Adjust anti-alias cutoff if pitching up to prevent aliasing
+        if (semitones > 0) {
+            float ratio = std::pow(2.0f, semitones / 12.0f);
+            float maxFreq = (mSampleRate * 0.5f) / ratio; // Nyquist divided by pitch ratio
+            mAntiAliasLPF.SetCutoff(maxFreq);
+        } else {
+            mAntiAliasLPF.SetCutoff(20000.0f); // No anti-aliasing needed for pitch down/neutral
+        }
+    }
+
+    // Update target grain size for adaptive pitching
+    void UpdateTargetGrainSizeMs(float ms) {
+        mPitchShifter.UpdateTargetGrainSizeMs(ms);
     }
 
     // Set sample rate (re-calculates delay line sizes)
@@ -63,6 +91,13 @@ public:
         mPitchShifter.Init(sampleRate);
         mLFO.Init(sampleRate);
         mTimeSmoother.Init(sampleRate, 30.0f);
+        mFeedbackLPF.Init(sampleRate);
+        mFeedbackHPF.Init(sampleRate);
+        mAntiAliasLPF.Init(sampleRate);
+        // Restore cutoffs after Init resets them
+        mFeedbackLPF.SetCutoff(3000.0f);
+        mFeedbackHPF.SetCutoff(200.0f);
+        SetPitchSemitones(static_cast<int>(mPitchSemitones)); // Re-calculate AA cutoff
     }
 
     // Process one sample: dry input → delay → pitch shift → feedback → output
@@ -78,8 +113,14 @@ public:
         const float lfoOut = mLFO.Process();
         const float modOffset = lfoOut * mModDepth * 5.0f; // ±5 samples at full depth (subtle chorus)
 
+        // Pre-process write sample: if pitching up, apply AA filter to prevent aliasing
+        // in the pitch shifter. This applies to both input and feedback.
+        float writeSample = input + mFeedback;
+        if (mPitchSemitones > 0.0f) {
+            writeSample = mAntiAliasLPF.Process(writeSample);
+        }
+
         // Write feedback + input to delay buffer
-        const float writeSample = input + mFeedback;
         mDelayBuffer.Write(writeSample);
 
         // Read pitch-shifted signal from delay line
@@ -87,12 +128,14 @@ public:
 
         // Calculate feedback value (with clipping for >100% protection)
         // Clamp the pitch-shifted output to [-2, 2] before the feedback path
-        // to prevent cubic interpolation overshoots from compounding through
-        // the loop — spline overshoots that are inaudible on a single pass
-        // become audible crackle when re-interpolated across multiple repeats.
         const float feedbackGain = mFeedbackPct * 0.01f;
         const float clampedOutput = std::max(-2.0f, std::min(2.0f, pitchShifted));
-        mFeedback = mClipper.Process(clampedOutput * feedbackGain);
+        
+        // Apply feedback filtering to emulate analog delay roll-off and reduce mud
+        float filteredFeedback = mFeedbackHPF.Process(clampedOutput);
+        filteredFeedback = mFeedbackLPF.Process(filteredFeedback);
+
+        mFeedback = mClipper.Process(filteredFeedback * feedbackGain);
 
         mLastOutput = pitchShifted;
         return pitchShifted;
@@ -106,6 +149,9 @@ public:
         mDelayBuffer.Clear();
         mPitchShifter.Reset();
         mLFO.Reset();
+        mFeedbackLPF.Reset();
+        mFeedbackHPF.Reset();
+        mAntiAliasLPF.Reset();
         mFeedback = 0.0f;
         mLastOutput = 0.0f;
         mTimeSmoother.Snap();
@@ -131,6 +177,9 @@ private:
     ModLFO mLFO;
     SoftClipper mClipper;
     ParamSmoother mTimeSmoother;
+    OnePoleFilter mFeedbackLPF;
+    OnePoleFilter mFeedbackHPF;
+    OnePoleFilter mAntiAliasLPF;
 
     float mFeedback;   // feedback sample (one-sample delay around the loop)
     float mLastOutput;
