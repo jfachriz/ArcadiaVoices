@@ -76,7 +76,7 @@
 #elif defined OS_WEB
   #define FONT_DESCRIPTOR_TYPE std::pair<WDL_String, WDL_String>*
 #else 
-  // NO_IGRAPHICS
+  #define FONT_DESCRIPTOR_TYPE void*
 #endif
 
 BEGIN_IPLUG_NAMESPACE

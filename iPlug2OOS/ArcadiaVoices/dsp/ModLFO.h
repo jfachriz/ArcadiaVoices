@@ -31,7 +31,7 @@ public:
         float out;
         if (mWaveform == 0) {
             // Sine: sin(2pi * phase)
-            out = std::sin(2.0f * M_PI * mPhase);
+            out = std::sin(2.0f * 3.14159265f * mPhase);
         } else {
             // Triangle: 4*|phase - 0.5| - 1
             out = 4.0f * std::abs(mPhase - 0.5f) - 1.0f;

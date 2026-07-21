@@ -74,7 +74,7 @@ public:
         const float crossfadePhase = phaseInGrain / mGrainSize; // [0, 1)
 
         // Raised-cosine equal-power crossfade
-        const float cf = 0.5f * (1.0f - std::cos(2.0f * M_PI * crossfadePhase));
+        const float cf = 0.5f * (1.0f - std::cos(2.0f * 3.14159265f * crossfadePhase));
         const float gainA = std::sqrt(1.0f - cf);
         const float gainB = std::sqrt(cf);
 
