@@ -2,12 +2,12 @@
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
-  --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --background: #09090b;
+  --foreground: #f8f8ff;
+  --card: #12141c;
+  --card-foreground: #f8f8ff;
+  --popover: #09090b;
+  --popover-foreground: #f8f8ff;
   --primary: #030213;
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.95 0.0058 264.53);
