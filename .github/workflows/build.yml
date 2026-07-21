@@ -31,7 +31,7 @@ jobs:
         cp -R dist iPlug2OOS/ArcadiaVoices/resources/web
         
     - name: Configure CMake
-      run: cmake -S iPlug2OOS -B build -G "Visual Studio 17 2022" -A x64
+      run: cmake -S iPlug2OOS -B build
 
     - name: Build C++ Plugin
       run: cmake --build build --config Release
