@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { NOTE_DIVISIONS, timeToMs, knobToSemitone, type SavedPreset, type KnobValues } from './types';
+import logoImg from '../../../assets/logo.png';
 
 interface OLEDScreenProps {
   powerOn: boolean;
@@ -29,7 +30,7 @@ export default function OLEDScreen({
   onRenamePreset, onDeletePreset
 }: OLEDScreenProps) {
   return (
-    <div className="h-[55%] text-white flex flex-col items-center justify-center relative shadow-[inset_0_-10px_20px_rgba(0,0,0,0.5)] bg-[#000000] overflow-hidden">
+    <div className="h-[55%] text-white flex flex-col items-center justify-center relative shadow-[inset_0_-10px_20px_rgba(0,0,0,0.5)] bg-[#000000] overflow-hidden rounded-t-[16px]">
       <AnimatePresence>
         {powerOn && (
           <motion.div
@@ -44,70 +45,67 @@ export default function OLEDScreen({
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="w-full h-full flex flex-col items-center justify-center relative"
           >
-            {isPresetMenuOpen ? (
-              <PresetMenuOverlay
-                presets={savedPresets}
-                activeId={activePresetId}
-                onLoad={onLoadPreset}
-                onSave={onSaveCurrentPreset}
-                onCancel={onCancelPresetMenu}
-                onRename={onRenamePreset}
-                onDelete={onDeletePreset}
-              />
-            ) : (
-              <>
-                {/* Logo icon */}
-                <div className="absolute top-6 flex space-x-[2px] items-center justify-center w-8 h-8 border border-white/20 rounded-md">
-                  <div className="w-[3px] h-[10px] bg-white rounded-sm"></div>
-                  <div className="w-[3px] h-[14px] bg-white rounded-sm"></div>
-                  <div className="w-[3px] h-[10px] bg-white rounded-sm"></div>
-                </div>
+            {/* Logo image */}
+            <img src={logoImg} alt="Logo" className="absolute top-3 h-8 object-contain filter brightness-110 opacity-90" />
 
-                {/* Title area — shows knob value or preset name */}
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeKnob && activeKnob !== 'preset' && activeKnob !== 'power' ? 'value' : 'title'}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="mt-8 text-xl tracking-wide font-light h-8 flex items-center"
-                  >
-                    {activeKnob && activeKnob !== 'preset' && activeKnob !== 'power' ? (
-                      <span className="text-white">
-                        {activeKnob === 'time' && !syncMode
-                          ? `time: ${timeToMs(knobValues.time as number)} ms`
-                          : activeKnob === 'time' && syncMode
-                            ? `time: ${NOTE_DIVISIONS[noteDivisionIndex]}`
-                            : activeKnob === 'left' || activeKnob === 'right'
-                              ? `${activeKnob}: ${knobToSemitone(knobValues[activeKnob] as number)} st`
-                              : `${activeKnob}: ${Math.round(knobValues[activeKnob] as number)}`
-                        }
-                      </span>
-                    ) : (
-                      savedPresets.find(p => p.id === activePresetId)?.name || "multi voice"
-                    )}
-                  </motion.div>
-                </AnimatePresence>
+            {/* Title area — shows knob value or preset name */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeKnob && activeKnob !== 'preset' && activeKnob !== 'power' ? 'value' : 'title'}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                className="mt-8 text-xl tracking-wide font-light h-8 flex items-center"
+              >
+                {activeKnob && activeKnob !== 'preset' && activeKnob !== 'power' ? (
+                  <span className="text-white">
+                    {activeKnob === 'time' && !syncMode
+                      ? `time: ${timeToMs(knobValues.time as number)} ms`
+                      : activeKnob === 'time' && syncMode
+                        ? `time: ${NOTE_DIVISIONS[noteDivisionIndex]}`
+                        : activeKnob === 'left' || activeKnob === 'right'
+                          ? `${activeKnob}: ${knobToSemitone(knobValues[activeKnob] as number)} st`
+                          : `${activeKnob}: ${Math.round(knobValues[activeKnob] as number)}`
+                    }
+                  </span>
+                ) : (
+                  savedPresets.find(p => p.id === activePresetId)?.name || "multi voice"
+                )}
+              </motion.div>
+            </AnimatePresence>
 
-                {/* Preset number display */}
-                <motion.div
-                  key={activePresetId}
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  onClick={onOpenPresetMenu}
-                  className="mt-3 border-[1.5px] border-white/80 rounded-lg px-4 py-1 text-4xl font-light tracking-widest cursor-pointer hover:bg-white/10 transition-colors"
-                >
-                  {activePresetId.toString().padStart(2, '0')}
-                </motion.div>
+            {/* Preset number display */}
+            <motion.div
+              key={activePresetId}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              onClick={onOpenPresetMenu}
+              className="mt-3 border-[1.5px] border-white/80 rounded-lg px-4 py-1 text-4xl font-light tracking-widest cursor-pointer hover:bg-white/10 transition-colors"
+            >
+              {activePresetId.toString().padStart(2, '0')}
+            </motion.div>
 
-                {/* Left pitch indicator */}
-                <PitchIndicator side="left" value={pitchLValue} />
+            {/* Left pitch indicator */}
+            <PitchIndicator side="left" value={pitchLValue} />
 
-                {/* Right pitch indicator */}
-                <PitchIndicator side="right" value={pitchRValue} />
-              </>
-            )}
+            {/* Right pitch indicator */}
+            <PitchIndicator side="right" value={pitchRValue} />
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Preset Menu Modal — rendered directly over the entire panel when open */}
+      <AnimatePresence>
+        {isPresetMenuOpen && (
+          <PresetMenuOverlay
+            presets={savedPresets}
+            activeId={activePresetId}
+            onLoad={onLoadPreset}
+            onSave={onSaveCurrentPreset}
+            onCancel={onCancelPresetMenu}
+            onRename={onRenamePreset}
+            onDelete={onDeletePreset}
+          />
         )}
       </AnimatePresence>
     </div>
@@ -136,7 +134,7 @@ function PitchIndicator({ side, value }: { side: 'left' | 'right'; value: number
   );
 }
 
-function PresetMenuOverlay({
+export function PresetMenuOverlay({
   presets, activeId, onLoad, onSave, onCancel, onRename, onDelete
 }: {
   presets: SavedPreset[];
@@ -163,9 +161,14 @@ function PresetMenuOverlay({
   };
 
   return (
-    <div className="absolute inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4">
-      <h3 className="text-white/60 text-[10px] mb-4 tracking-widest uppercase">Select Preset</h3>
-      <div className="flex flex-wrap justify-center gap-2 mb-6 max-w-[85%]">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.96 }}
+      className="absolute inset-0 z-50 bg-[#090b10]/95 backdrop-blur-md flex flex-col items-center justify-center p-6 rounded-[16px] border border-white/20 shadow-2xl"
+    >
+      <h3 className="text-white/80 text-sm mb-5 tracking-widest uppercase font-semibold">Select Preset</h3>
+      <div className="flex flex-wrap justify-center gap-4 mb-6 max-w-[90%]">
         {presets.map(p => (
           <div key={p.id} className="relative group flex flex-col items-center">
             {renamingId === p.id ? (
@@ -175,35 +178,35 @@ function PresetMenuOverlay({
                 onChange={e => setRenameInput(e.target.value)}
                 onKeyDown={e => { if (e.key === 'Enter') commitRename(); if (e.key === 'Escape') setRenamingId(null); }}
                 onBlur={commitRename}
-                className="w-24 px-2 py-1 text-xs rounded bg-white/10 text-white border border-white/30 outline-none text-center"
+                className="w-28 px-2 py-1.5 text-xs rounded-lg bg-white/10 text-white border border-white/40 outline-none text-center"
               />
             ) : (
               <>
                 <button
                   onClick={() => onLoad(p)}
-                  className={`w-10 h-10 rounded flex flex-col items-center justify-center text-lg font-light transition-all ${
+                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex flex-col items-center justify-center text-2xl sm:text-3xl font-light transition-all ${
                     activeId === p.id
-                      ? 'bg-white text-black shadow-[0_0_15px_rgba(255,255,255,0.4)]'
-                      : 'bg-white/5 text-white/70 border border-white/20 hover:bg-white/20'
+                      ? 'bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.6)] scale-105'
+                      : 'bg-white/10 text-white/80 border border-white/20 hover:bg-white/25'
                   }`}
                 >
                   {p.id.toString().padStart(2, '0')}
                 </button>
                 {/* Hover actions: rename + delete */}
-                <div className="absolute -top-3 hidden group-hover:flex gap-1">
+                <div className="absolute -top-2 hidden group-hover:flex gap-1.5 z-10">
                   <button
                     onClick={() => startRename(p)}
-                    className="w-4 h-4 rounded-full bg-white/20 text-white/80 text-[7px] flex items-center justify-center hover:bg-white/40 transition-colors"
+                    className="w-5 h-5 rounded-full bg-white/30 text-white text-[9px] flex items-center justify-center hover:bg-white/50 transition-colors shadow"
                     title="Rename"
                   >✎</button>
                   <button
                     onClick={() => onDelete(p.id)}
-                    className="w-4 h-4 rounded-full bg-white/20 text-white/80 text-[7px] flex items-center justify-center hover:bg-red-400/60 hover:text-white transition-colors"
+                    className="w-5 h-5 rounded-full bg-white/30 text-white text-[9px] flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors shadow"
                     title="Delete"
                     style={{ display: presets.length <= 1 ? 'none' : undefined }}
                   >✕</button>
                 </div>
-                <span className="text-[6px] text-white/40 mt-1 truncate max-w-16 text-center leading-tight">{p.name}</span>
+                <span className="text-[10px] text-white/60 mt-1.5 truncate max-w-20 text-center leading-tight font-medium">{p.name}</span>
               </>
             )}
           </div>
@@ -212,17 +215,17 @@ function PresetMenuOverlay({
       <div className="flex gap-4">
         <button
           onClick={onSave}
-          className="text-[10px] tracking-wider uppercase border border-white/30 px-3 py-1.5 rounded-full text-white/70 hover:bg-white hover:text-black transition-colors"
+          className="text-xs tracking-wider uppercase border border-white/40 px-5 py-2 rounded-full text-white hover:bg-white hover:text-black font-semibold transition-all shadow-md"
         >
           Save as New
         </button>
         <button
           onClick={onCancel}
-          className="text-[10px] tracking-wider uppercase border border-white/30 px-3 py-1.5 rounded-full text-white/70 hover:bg-white hover:text-black transition-colors"
+          className="text-xs tracking-wider uppercase border border-white/40 px-5 py-2 rounded-full text-white/80 hover:bg-white/20 font-semibold transition-all"
         >
           Cancel
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }

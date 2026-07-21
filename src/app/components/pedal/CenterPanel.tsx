@@ -36,7 +36,7 @@ export default function CenterPanel({
   onPitchLChange, onPitchRChange
 }: CenterPanelProps) {
   return (
-    <div className="flex-1 flex flex-col gap-0 rounded-[16px] overflow-hidden bg-[#12141c] border border-white/10 shadow-lg">
+    <div className="flex-1 flex flex-col gap-0 rounded-[16px] overflow-hidden bg-[#12141c] border border-white/10 shadow-lg relative">
       <OLEDScreen
         powerOn={powerOn}
         activeKnob={activeKnob}
