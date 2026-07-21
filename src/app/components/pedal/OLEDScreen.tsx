@@ -46,7 +46,7 @@ export default function OLEDScreen({
             className="w-full h-full flex flex-col items-center justify-center relative"
           >
             {/* Logo image */}
-            <img src={logoImg} alt="Logo" className="absolute top-3 h-8 object-contain filter brightness-110 opacity-90" />
+            <img src={logoImg} alt="Logo" className="absolute top-2 h-14 object-contain filter brightness-110 opacity-90" />
 
             {/* Title area — shows knob value or preset name */}
             <AnimatePresence mode="wait">
@@ -165,7 +165,7 @@ export function PresetMenuOverlay({
       initial={{ opacity: 0, scale: 0.96 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
-      className="absolute inset-0 z-50 bg-[#090b10]/95 backdrop-blur-md flex flex-col items-center justify-center p-6 rounded-[16px] border border-white/20 shadow-2xl"
+      className="absolute inset-0 z-50 bg-[#090b10]/95 backdrop-blur-md flex flex-col items-center justify-center p-6 rounded-t-[16px] rounded-b-none border border-white/20 shadow-2xl"
     >
       <h3 className="text-white/80 text-sm mb-5 tracking-widest uppercase font-semibold">Select Preset</h3>
       <div className="flex flex-wrap justify-center gap-4 mb-6 max-w-[90%]">
