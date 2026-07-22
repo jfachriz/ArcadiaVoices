@@ -5,7 +5,7 @@ set -euo pipefail
 # EDIT THESE VALUES
 # =====================================================================
 PRODUCT_NAME="Arcadia Voices"                          # Used in titles / dmg name
-VERSION="v1.1.0"
+VERSION="1.1.0"
 IDENTIFIER_PREFIX="com.ArchangelDSP.ArcadiaVoices"     # Reverse-DNS prefix
 
 # Pre-requisite rule from AGENTS.md: Always build web resources first
