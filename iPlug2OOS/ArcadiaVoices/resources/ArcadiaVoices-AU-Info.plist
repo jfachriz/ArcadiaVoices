@@ -6,13 +6,13 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>AV</string>
+			<string>Arcadia Voices</string>
 			<key>factoryFunction</key>
 			<string>ArcadiaVoices_Factory</string>
 			<key>manufacturer</key>
 			<string>Adsp</string>
 			<key>name</key>
-			<string>Archangel DSP: AV</string>
+			<string>Archangel DSP: Arcadia Voices</string>
 			<key>sandboxSafe</key>
 			<true/>
 			<key>subtype</key>
@@ -28,27 +28,27 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>AV</string>
+	<string>Arcadia Voices</string>
 	<key>CFBundleGetInfoString</key>
-	<string>AV v1.0.0 Copyright 2026 ArchangelDSP</string>
+	<string>Arcadia Voices v1.1.0 Copyright 2026 ArchangelDSP</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.Archangel DSP.audiounit.AV</string>
+	<string>com.ArchangelDSP.audiounit.ArcadiaVoices</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AV</string>
+	<string>Arcadia Voices</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>CFBundleSignature</key>
 	<string>Avce</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.13.0</string>
+	<string>10.15</string>
 	<key>NSPrincipalClass</key>
 	<string>ArcadiaVoices_View</string>
 </dict>
