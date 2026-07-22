@@ -1,6 +1,6 @@
 # Arcadia Voices (AV) - Multi-Voice Pitch Delay Plugin
 
-![Arcadia Voices](https://github.com/jfachriz/ArcadiaVoices/blob/main/Assets/Delay_UI.png)
+![Arcadia Voices](Assets/Delay_UI.png)
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/jfachriz)
 
@@ -222,7 +222,7 @@ Arcadia Voices does not collect or transmit any personal data. All preset storag
 
 ## 📝 Changelog
 
-### Version 1.0 (Current)
+### Version 1.1 (Current)
 - Initial release
 - VST3 and AU formats for macOS
 - Full feature set including pitch-shifting, tempo sync, and preset system
