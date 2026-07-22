@@ -9,8 +9,8 @@
 #define PLUG_COPYRIGHT_STR "Copyright 2026 ArchangelDSP"
 #define PLUG_CLASS_NAME ArcadiaVoices
 
-#define BUNDLE_NAME "Arcadia Voices"
-#define BUNDLE_MFR "Archangel DSP"
+#define BUNDLE_NAME "ArcadiaVoices"
+#define BUNDLE_MFR "ArchangelDSP"
 #define BUNDLE_DOMAIN "com"
 
 #define SHARED_RESOURCES_SUBPATH "ArcadiaVoices"

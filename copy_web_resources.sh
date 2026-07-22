@@ -9,21 +9,21 @@ npm run build
 
 echo "Copying web resources to iPlug2..."
 rm -rf "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web"
-cp -R "$SCRIPT_DIR/dist" "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web"
+mkdir -p "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web"
+cp -R "$SCRIPT_DIR/dist/"* "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web/"
 
-# Update build output and user plugin bundles
+# Update build output and installed plugin bundles directly
 for path in \
+  "$SCRIPT_DIR/iPlug2OOS/build/macos-xcode/out/Release/Arcadia Voices.vst3/Contents/Resources/web" \
+  "$SCRIPT_DIR/iPlug2OOS/build/macos-xcode/out/Release/Arcadia Voices.component/Contents/Resources/web" \
   "$SCRIPT_DIR/build/out/Arcadia Voices.vst3/Contents/Resources/web" \
   "$SCRIPT_DIR/build/out/Arcadia Voices.component/Contents/Resources/web" \
-  "$SCRIPT_DIR/build/out/AV.vst3/Contents/Resources/web" \
-  "$SCRIPT_DIR/build/out/AV.component/Contents/Resources/web" \
   "$HOME/Library/Audio/Plug-Ins/VST3/Arcadia Voices.vst3/Contents/Resources/web" \
-  "$HOME/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web" \
-  "$HOME/Library/Audio/Plug-Ins/VST3/AV.vst3/Contents/Resources/web" \
-  "$HOME/Library/Audio/Plug-Ins/Components/AV.component/Contents/Resources/web"; do
-  if [ -d "$path" ]; then
+  "$HOME/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web"; do
+  if [ -d "$(dirname "$path")" ]; then
     rm -rf "$path"
-    cp -R "$SCRIPT_DIR/dist" "$path"
+    mkdir -p "$path"
+    cp -R "$SCRIPT_DIR/dist/"* "$path/"
     echo "Updated bundle resource: $path"
   fi
 done
@@ -31,12 +31,11 @@ done
 # System-level paths (attempt update if writable)
 for path in \
   "/Library/Audio/Plug-Ins/VST3/Arcadia Voices.vst3/Contents/Resources/web" \
-  "/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web" \
-  "/Library/Audio/Plug-Ins/VST3/AV.vst3/Contents/Resources/web" \
-  "/Library/Audio/Plug-Ins/Components/AV.component/Contents/Resources/web"; do
-  if [ -d "$path" ] && [ -w "$path" ]; then
+  "/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web"; do
+  if [ -d "$(dirname "$path")" ] && [ -w "$(dirname "$path")" ]; then
     rm -rf "$path"
-    cp -R "$SCRIPT_DIR/dist" "$path"
+    mkdir -p "$path"
+    cp -R "$SCRIPT_DIR/dist/"* "$path/"
     echo "Updated system bundle resource: $path"
   fi
 done
