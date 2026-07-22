@@ -43,7 +43,7 @@ ArcadiaVoices::ArcadiaVoices(const InstanceInfo& info)
 #endif
 
   mEditorInitFunc = [&]() {
-    LoadIndexHtml(__FILE__, GetBundleID());
+    LoadFile("index.html", GetBundleID());
     EnableScroll(false);
   };
 #endif

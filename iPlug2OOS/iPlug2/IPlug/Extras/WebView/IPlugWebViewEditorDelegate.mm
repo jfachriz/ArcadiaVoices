@@ -66,10 +66,12 @@ using namespace iplug;
   CGFloat h = pDelegate->GetEditorHeight();
   CGRect r = CGRectMake(0, 0, w, h);
   self = [super initWithFrame:r];
+  [self setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable];
   
   void* pWebView = pDelegate->OpenWebView(self, 0, 0, w, h, 1.0f);
 
   [self addSubview: (PLATFORM_VIEW*) pWebView];
+  [(PLATFORM_VIEW*) pWebView setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable];
 
   return self;
 }

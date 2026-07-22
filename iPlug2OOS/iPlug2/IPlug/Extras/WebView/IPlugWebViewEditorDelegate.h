@@ -225,16 +225,7 @@ public:
    */
   void LoadIndexHtml(const char* pathOfPluginSrc, const char* bundleid)
   {
-#if !defined OS_IOS && defined _DEBUG
-    namespace fs = std::filesystem;
-    
-    fs::path mainPath(pathOfPluginSrc);
-    fs::path indexRelativePath = mainPath.parent_path() / "Resources" / "web" / "index.html";
-
-    LoadFile(indexRelativePath.string().c_str(), nullptr);
-#else
-    LoadFile("index.html", bundleid); // TODO: make this work for windows
-#endif
+    LoadFile("index.html", bundleid);
   }
 
 protected:

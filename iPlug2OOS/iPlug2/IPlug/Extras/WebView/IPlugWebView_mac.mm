@@ -230,6 +230,7 @@ void* IWebViewImpl::OpenWebView(void* pParent, float x, float y, float w, float 
   }
   
   [wkWebView setAllowsMagnification:NO];
+  [wkWebView setAutoresizingMask: NSViewWidthSizable | NSViewHeightSizable];
 #endif
   
   auto* navigationDelegate = [[IPLUG_WKWEBVIEW_DELEGATE alloc] initWithIWebView: mIWebView];
