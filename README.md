@@ -82,4 +82,7 @@
 
 ## License
 
-© 2026 **Archangel DSP**. All rights reserved.
+Arcadia Voices is proprietary software by Archangel DSP.
+All rights reserved. Single-user license included.
+
+© 2026 Archangel DSP | [Website](https://archangeldsp.sbs) | [Support](mailto:archangeldsp@gmail.com)
