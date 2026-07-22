@@ -13,8 +13,12 @@ cp -R "$SCRIPT_DIR/dist" "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web"
 
 # Update build output and user plugin bundles
 for path in \
+  "$SCRIPT_DIR/build/out/Arcadia Voices.vst3/Contents/Resources/web" \
+  "$SCRIPT_DIR/build/out/Arcadia Voices.component/Contents/Resources/web" \
   "$SCRIPT_DIR/build/out/AV.vst3/Contents/Resources/web" \
   "$SCRIPT_DIR/build/out/AV.component/Contents/Resources/web" \
+  "$HOME/Library/Audio/Plug-Ins/VST3/Arcadia Voices.vst3/Contents/Resources/web" \
+  "$HOME/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web" \
   "$HOME/Library/Audio/Plug-Ins/VST3/AV.vst3/Contents/Resources/web" \
   "$HOME/Library/Audio/Plug-Ins/Components/AV.component/Contents/Resources/web"; do
   if [ -d "$path" ]; then
@@ -26,6 +30,8 @@ done
 
 # System-level paths (attempt update if writable)
 for path in \
+  "/Library/Audio/Plug-Ins/VST3/Arcadia Voices.vst3/Contents/Resources/web" \
+  "/Library/Audio/Plug-Ins/Components/Arcadia Voices.component/Contents/Resources/web" \
   "/Library/Audio/Plug-Ins/VST3/AV.vst3/Contents/Resources/web" \
   "/Library/Audio/Plug-Ins/Components/AV.component/Contents/Resources/web"; do
   if [ -d "$path" ] && [ -w "$path" ]; then

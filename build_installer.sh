@@ -4,16 +4,16 @@ set -euo pipefail
 # =====================================================================
 # EDIT THESE VALUES
 # =====================================================================
-PRODUCT_NAME="AV"                          # Used in titles / dmg name
+PRODUCT_NAME="Arcadia Voices"                          # Used in titles / dmg name
 VERSION="1.0"
-IDENTIFIER_PREFIX="com.ArchangelDSP.AV"     # Reverse-DNS prefix
+IDENTIFIER_PREFIX="com.ArchangelDSP.ArcadiaVoices"     # Reverse-DNS prefix
 
 # Pre-requisite rule from AGENTS.md: Always build web resources first
 echo "==> Building web UI resources..."
 ./copy_web_resources.sh
 
-SRC_AU="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/AV.component"
-SRC_VST3="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/AV.vst3"
+SRC_AU="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/Arcadia Voices.component"
+SRC_VST3="$(pwd)/iPlug2OOS/build/macos-xcode/out/Release/Arcadia Voices.vst3"
 
 # Default install locations are RELATIVE (no leading slash).
 # This lets Installer.app's native "Install for all users / just me" choice

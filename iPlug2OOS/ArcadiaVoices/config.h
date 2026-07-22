@@ -1,4 +1,4 @@
-#define PLUG_NAME "AV"
+#define PLUG_NAME "Arcadia Voices"
 #define PLUG_MFR "Archangel DSP"
 #define PLUG_VERSION_HEX 0x00010100
 #define PLUG_VERSION_STR "1.1.0"
@@ -9,7 +9,7 @@
 #define PLUG_COPYRIGHT_STR "Copyright 2026 ArchangelDSP"
 #define PLUG_CLASS_NAME ArcadiaVoices
 
-#define BUNDLE_NAME "AV"
+#define BUNDLE_NAME "Arcadia Voices"
 #define BUNDLE_MFR "Archangel DSP"
 #define BUNDLE_DOMAIN "com"
 
@@ -43,7 +43,7 @@
 #define AAX_TYPE_IDS 'ITP1'
 #define AAX_TYPE_IDS_AUDIOSUITE 'ITA1'
 #define AAX_PLUG_MFR_STR "Archangel DSP"
-#define AAX_PLUG_NAME_STR "AV\nArcv"
+#define AAX_PLUG_NAME_STR "Arcadia Voices\nArcv"
 #define AAX_PLUG_CATEGORY_STR "Effect"
 #define AAX_DOES_AUDIOSUITE 1
 
