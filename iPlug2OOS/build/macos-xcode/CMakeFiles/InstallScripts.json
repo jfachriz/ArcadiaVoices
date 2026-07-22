@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/cmake_install.cmake",
-		"/Users/jfachriz/Documents/VST_Plugins/ArcadiaVoices/iPlug2OOS/build/macos-xcode/ArcadiaVoices/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

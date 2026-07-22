@@ -2,12 +2,21 @@
 node_modules/
 dist/
 
-# Build artifacts
+# Build & Scratch artifacts
 build_tmp/
+build/
+build_test/
+actions.md
+inline_web_resources.cjs
+scratch_test*
 .DS_Store
 out/
 
+# AI Agents & IDE configs
+.agents/
+
 # iPlug2 build folders
+iPlug2OOS/build/
 iPlug2OOS/ArcadiaVoices/build-*/
 iPlug2OOS/ArcadiaVoices/resources/web/
 iPlug2OOS/ArcadiaVoices/out/
