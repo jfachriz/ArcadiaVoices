@@ -38,9 +38,7 @@ ArcadiaVoices::ArcadiaVoices(const InstanceInfo& info)
 
   // ---- WebView UI setup (matches ArcadiaTS9 pattern) ----
 #ifdef WEBVIEW_EDITOR_DELEGATE
-#ifdef DEBUG
   SetEnableDevTools(true);
-#endif
 
   mEditorInitFunc = [&]() {
     LoadFile("index.html", GetBundleID());

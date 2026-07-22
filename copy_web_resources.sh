@@ -6,7 +6,6 @@ cd "$SCRIPT_DIR"
 
 echo "Building React UI for Arcadia Voices..."
 npm run build
-node inline_web_resources.cjs
 
 echo "Copying web resources to iPlug2..."
 rm -rf "$SCRIPT_DIR/iPlug2OOS/ArcadiaVoices/resources/web"
