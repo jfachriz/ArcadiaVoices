@@ -21,6 +21,7 @@
 #if defined(OS_IOS) || defined(OS_MAC)
 #import <Foundation/Foundation.h>
 #include <TargetConditionals.h>
+#include <dlfcn.h>
 #endif
 
 #ifdef IGRAPHICS_METAL
@@ -171,9 +172,20 @@ bool GetResourcePathFromBundle(const char* fileName, const char* searchExt, WDL_
       NSString* frameworkBundleID = [[NSString stringWithUTF8String:bundleID] stringByAppendingString:@"Framework"];
       pBundle = [NSBundle bundleWithIdentifier:frameworkBundleID];
     }
-    else
+    else if (bundleID && strlen(bundleID) > 0)
     {
       pBundle = [NSBundle bundleWithIdentifier:[NSString stringWithUTF8String:bundleID]];
+    }
+
+    if (!pBundle)
+    {
+      Dl_info info;
+      if (dladdr((const void*)GetResourcePathFromBundle, &info) && info.dli_fname)
+      {
+        NSString* binaryPath = [NSString stringWithUTF8String:info.dli_fname];
+        NSString* bundlePath = [[binaryPath stringByDeletingLastPathComponent] stringByDeletingLastPathComponent];
+        pBundle = [NSBundle bundleWithPath:bundlePath];
+      }
     }
 
     NSString* pFile = [[NSString stringWithUTF8String:fileName] stringByDeletingPathExtension];

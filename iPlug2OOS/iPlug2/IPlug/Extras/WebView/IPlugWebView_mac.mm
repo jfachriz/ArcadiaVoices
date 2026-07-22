@@ -309,9 +309,19 @@ void IWebViewImpl::LoadFile(const char* fileName, const char* _Nullable bundleID
     urlScheme = [urlScheme stringByReplacingOccurrencesOfString:@"file" withString:customUrlScheme];
   }
   
-  NSString* webroot = [urlScheme stringByAppendingString:[pPath stringByReplacingOccurrencesOfString:[NSString stringWithUTF8String:fileName] withString:@""]];
+  NSURL* pageUrl = nil;
+  NSURL* rootUrl = nil;
 
-  NSURL* pageUrl = [NSURL URLWithString:[webroot stringByAppendingString:[NSString stringWithUTF8String:fileName]] relativeToURL:nil];
+  if (useCustomUrlScheme)
+  {
+    NSString* webroot = [urlScheme stringByAppendingString:[pPath stringByReplacingOccurrencesOfString:[NSString stringWithUTF8String:fileName] withString:@""]];
+    pageUrl = [NSURL URLWithString:[webroot stringByAppendingString:[NSString stringWithUTF8String:fileName]] relativeToURL:nil];
+  }
+  else
+  {
+    pageUrl = [NSURL fileURLWithPath:pPath];
+    rootUrl = [pageUrl URLByDeletingLastPathComponent];
+  }
 
   if (useCustomUrlScheme)
   {
@@ -339,9 +349,8 @@ void IWebViewImpl::LoadFile(const char* fileName, const char* _Nullable bundleID
     NSURLRequest* req = [[NSURLRequest alloc] initWithURL:pageUrl];
     [mWKWebView loadRequest:req];
   }
-  else
+  else if (pageUrl && rootUrl)
   {
-    NSURL* rootUrl = [NSURL URLWithString:webroot relativeToURL:nil];
     [mWKWebView loadFileURL:pageUrl allowingReadAccessToURL:rootUrl];
   }
 }
